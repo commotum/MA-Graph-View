@@ -4,17 +4,33 @@ import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/s
 
 import type { GraphData } from "@/lib/graph-data";
 import { AppSidebar } from "@/components/app/app-sidebar";
+import { TopicCommandPalette } from "@/components/app/topic-command-palette";
+import type { TopicSearchItem } from "@/lib/topic-search";
 
 type AppShellProps = {
   graph: GraphData;
   selectedTopicId: number | null;
+  topicSearchItems: TopicSearchItem[];
   children: ReactNode;
 };
 
-export function AppShell({ graph, selectedTopicId, children }: AppShellProps) {
+export function AppShell({
+  graph,
+  selectedTopicId,
+  topicSearchItems,
+  children,
+}: AppShellProps) {
   return (
     <SidebarProvider>
-      <AppSidebar graph={graph} selectedTopicId={selectedTopicId} />
+      <TopicCommandPalette
+        items={topicSearchItems}
+        selectedTopicId={selectedTopicId}
+      />
+      <AppSidebar
+        graph={graph}
+        selectedTopicId={selectedTopicId}
+        topicSearchItems={topicSearchItems}
+      />
       <SidebarInset>
         <header className="sticky top-0 z-10 flex items-center gap-3 border-b bg-background px-4 py-3">
           <SidebarTrigger />

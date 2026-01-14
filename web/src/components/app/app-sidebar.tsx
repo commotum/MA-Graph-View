@@ -5,7 +5,6 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarHeader,
-  SidebarInput,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -16,6 +15,7 @@ import {
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
+import { TopicSearch } from "@/components/app/topic-search";
 
 import type { GraphData } from "@/lib/graph-data";
 import {
@@ -24,19 +24,25 @@ import {
   selectTopicsByModule,
   selectUnitsByCourse,
 } from "@/lib/graph-data";
+import type { TopicSearchItem } from "@/lib/topic-search";
 
 type AppSidebarProps = {
   graph: GraphData;
   selectedTopicId: number | null;
+  topicSearchItems: TopicSearchItem[];
 };
 
-export function AppSidebar({ graph, selectedTopicId }: AppSidebarProps) {
+export function AppSidebar({
+  graph,
+  selectedTopicId,
+  topicSearchItems,
+}: AppSidebarProps) {
   const courses = selectCourses(graph);
 
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <SidebarInput placeholder="Search topics (coming soon)" />
+        <TopicSearch items={topicSearchItems} selectedTopicId={selectedTopicId} />
       </SidebarHeader>
       <SidebarSeparator />
       <SidebarContent>
