@@ -63,7 +63,7 @@ export function TopicSearch({ items, selectedTopicId }: TopicSearchProps) {
   };
 
   return (
-    <div className="grid gap-2">
+    <div className="grid gap-2 group-data-[collapsible=icon]:hidden">
       <div className="flex items-center gap-2">
         <SidebarInput
           placeholder="Search topics by name or ID"

@@ -4,110 +4,131 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
-  SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarRail,
-  SidebarSeparator,
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
-import { TopicSearch } from "@/components/app/topic-search";
 
 import type { GraphData } from "@/lib/graph-data";
 import {
+  selectTopicPlacementDetails,
   selectCourses,
   selectModulesByUnit,
   selectTopicsByModule,
   selectUnitsByCourse,
 } from "@/lib/graph-data";
-import type { TopicSearchItem } from "@/lib/topic-search";
-
 type AppSidebarProps = {
   graph: GraphData;
   selectedTopicId: number | null;
-  topicSearchItems: TopicSearchItem[];
 };
+
+const stripCoursePrefix = (value: string, courseId: string): string =>
+  value.startsWith(`${courseId}.`) ? value.slice(courseId.length + 1) : value;
 
 export function AppSidebar({
   graph,
   selectedTopicId,
-  topicSearchItems,
 }: AppSidebarProps) {
   const courses = selectCourses(graph);
+  const placementDetails =
+    selectedTopicId !== null
+      ? selectTopicPlacementDetails(graph, selectedTopicId)
+      : [];
+  const openCourseIds = new Set(placementDetails.map((placement) => placement.courseId));
+  const openUnitIds = new Set(placementDetails.map((placement) => placement.unitId));
+  const openModuleIds = new Set(placementDetails.map((placement) => placement.moduleId));
 
   return (
-    <Sidebar collapsible="icon">
-      <SidebarHeader>
-        <TopicSearch items={topicSearchItems} selectedTopicId={selectedTopicId} />
-      </SidebarHeader>
-      <SidebarSeparator />
-      <SidebarContent>
+    <Sidebar collapsible="offcanvas">
+      <SidebarContent className="group-data-[collapsible=icon]:hidden pt-4">
         {courses.map((course, index) => {
           const units = selectUnitsByCourse(graph, course.id);
+          const openCourse =
+            openCourseIds.size > 0 ? openCourseIds.has(course.id) : true;
           return (
-            <SidebarGroup key={course.id}>
-              <SidebarGroupLabel>
-                {course.id} — {course.name}
-              </SidebarGroupLabel>
-              <SidebarGroupContent>
-                <SidebarMenu>
-                  {units.map((unit) => (
-                    <SidebarMenuItem key={unit.id}>
-                      <SidebarMenuButton type="button">
-                        <span className="text-xs text-muted-foreground tabular-nums">
-                          {unit.id}
-                        </span>
-                        <span className="truncate">{unit.name}</span>
-                      </SidebarMenuButton>
-                      <SidebarMenuSub>
-                        {selectModulesByUnit(graph, unit.id).map((module) => {
-                          const topics = selectTopicsByModule(graph, module.id);
-                          return (
-                            <SidebarMenuSubItem key={module.id}>
-                              <SidebarMenuSubButton asChild>
-                                <span>
-                                  <span className="text-[11px] text-muted-foreground tabular-nums">
-                                    {module.id}
-                                  </span>
-                                  <span className="truncate">{module.name}</span>
+            <SidebarGroup key={course.id} className="py-0">
+              <details open={openCourse} className="group/course">
+                <SidebarGroupLabel asChild className="cursor-pointer text-sm font-semibold">
+                  <summary className="flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+                    <span className="truncate">{course.name}</span>
+                  </summary>
+                </SidebarGroupLabel>
+                <SidebarGroupContent>
+                  <SidebarMenu>
+                    {units.map((unit) => {
+                      const openUnit = openUnitIds.has(unit.id);
+                      const unitLabel = stripCoursePrefix(unit.id, course.id);
+                      return (
+                        <SidebarMenuItem key={unit.id}>
+                          <details open={openUnit} className="group/unit">
+                            <SidebarMenuButton asChild className="cursor-pointer">
+                              <summary className="list-none [&::-webkit-details-marker]:hidden">
+                                <span className="text-xs text-muted-foreground tabular-nums">
+                                  {unitLabel}
                                 </span>
-                              </SidebarMenuSubButton>
-                              <SidebarMenuSub className="mt-1">
-                                {topics.map((topic) => (
-                                  <SidebarMenuSubItem key={topic.hid}>
-                                    <SidebarMenuSubButton
-                                      asChild
-                                      size="sm"
-                                      isActive={topic.id === selectedTopicId}
-                                    >
-                                      <Link href={`/?topic=${topic.id}`}>
-                                        <span className="text-[11px] text-muted-foreground tabular-nums">
-                                          {topic.hid}
-                                        </span>
-                                        <span className="truncate">{topic.label}</span>
-                                      </Link>
-                                    </SidebarMenuSubButton>
+                                <span className="truncate">{unit.name}</span>
+                              </summary>
+                            </SidebarMenuButton>
+                            <SidebarMenuSub>
+                              {selectModulesByUnit(graph, unit.id).map((module) => {
+                                const topics = selectTopicsByModule(graph, module.id);
+                                const openModule = openModuleIds.has(module.id);
+                                const moduleLabel = stripCoursePrefix(module.id, course.id);
+                                return (
+                                  <SidebarMenuSubItem key={module.id}>
+                                    <details open={openModule} className="group/module">
+                                      <SidebarMenuSubButton asChild className="cursor-pointer">
+                                        <summary className="list-none [&::-webkit-details-marker]:hidden">
+                                          <span className="text-[11px] text-muted-foreground tabular-nums">
+                                            {moduleLabel}
+                                          </span>
+                                          <span className="truncate">{module.name}</span>
+                                        </summary>
+                                      </SidebarMenuSubButton>
+                                      <SidebarMenuSub className="mt-1">
+                                        {topics.map((topic) => {
+                                          const topicLabel = stripCoursePrefix(
+                                            topic.hid,
+                                            course.id
+                                          );
+                                          return (
+                                            <SidebarMenuSubItem key={topic.hid}>
+                                              <SidebarMenuSubButton
+                                                asChild
+                                                size="sm"
+                                                isActive={topic.id === selectedTopicId}
+                                              >
+                                                <Link href={`/?topic=${topic.id}`}>
+                                                  <span className="text-[11px] text-muted-foreground tabular-nums">
+                                                    {topicLabel}
+                                                  </span>
+                                                  <span className="truncate">{topic.label}</span>
+                                                </Link>
+                                              </SidebarMenuSubButton>
+                                            </SidebarMenuSubItem>
+                                          );
+                                        })}
+                                      </SidebarMenuSub>
+                                    </details>
                                   </SidebarMenuSubItem>
-                                ))}
-                              </SidebarMenuSub>
-                            </SidebarMenuSubItem>
-                          );
-                        })}
-                      </SidebarMenuSub>
-                    </SidebarMenuItem>
-                  ))}
-                </SidebarMenu>
-              </SidebarGroupContent>
-              {index < courses.length - 1 ? <SidebarSeparator /> : null}
+                                );
+                              })}
+                            </SidebarMenuSub>
+                          </details>
+                        </SidebarMenuItem>
+                      );
+                    })}
+                  </SidebarMenu>
+                </SidebarGroupContent>
+              </details>
             </SidebarGroup>
           );
         })}
       </SidebarContent>
-      <SidebarRail />
     </Sidebar>
   );
 }

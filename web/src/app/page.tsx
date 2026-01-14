@@ -1,9 +1,4 @@
-import { AppShell } from "@/components/app/app-shell";
-import { GraphSummaryCard } from "@/components/app/graph-summary-card";
-import { LocalDependencyCard } from "@/components/app/local-dependency-card";
-import { TopologicalListCard } from "@/components/app/topological-list-card";
-import { TopicBreadcrumbsCard } from "@/components/app/topic-breadcrumbs-card";
-import { TopicDetailCard } from "@/components/app/topic-detail-card";
+import { TopicPage } from "@/components/app/topic-page";
 import { getGraph, selectTopicIdByHid } from "@/lib/graph";
 import type { GraphData } from "@/lib/graph-data";
 import { buildTopicSearchItems } from "@/lib/topic-search";
@@ -45,20 +40,10 @@ export default async function Home({ searchParams }: PageProps) {
   const topicSearchItems = buildTopicSearchItems(graph);
 
   return (
-    <AppShell
+    <TopicPage
       graph={graph}
       selectedTopicId={topicId}
       topicSearchItems={topicSearchItems}
-    >
-      <>
-        <TopicBreadcrumbsCard graph={graph} topicId={topicId} />
-        <div className="grid gap-6 lg:grid-cols-2">
-          <GraphSummaryCard graph={graph} />
-          <TopicDetailCard graph={graph} topicId={topicId} />
-        </div>
-        <LocalDependencyCard graph={graph} selectedTopicId={topicId} />
-        <TopologicalListCard graph={graph} selectedTopicId={topicId} />
-      </>
-    </AppShell>
+    />
   );
 }

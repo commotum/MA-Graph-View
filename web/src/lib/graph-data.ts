@@ -86,6 +86,16 @@ export type ModuleTopic = {
   label: string;
 };
 
+export type TopicLayer = {
+  level: number;
+  topicIds: number[];
+};
+
+export type TopicLayerResult = {
+  layers: TopicLayer[];
+  levelsById: Record<string, number>;
+};
+
 const toTopicKey = (id: TopicIdInput): string =>
   typeof id === "number" ? String(id) : id.trim();
 
@@ -292,3 +302,40 @@ export const selectHasCycle = (graph: GraphData): boolean =>
 
 export const selectCycleNodes = (graph: GraphData): number[] =>
   graph.graph.cycle_nodes.slice();
+
+export const buildTopicLayers = (
+  graph: GraphData,
+  allowedIds?: Set<number>
+): TopicLayerResult => {
+  const levelsById: Record<string, number> = {};
+  const layers: Array<TopicLayer | undefined> = [];
+  const order =
+    graph.graph.topo_order.length > 0
+      ? graph.graph.topo_order
+      : graph.topics.ordered_ids;
+
+  order.forEach((id) => {
+    if (allowedIds && !allowedIds.has(id)) {
+      return;
+    }
+    const prereqs = graph.graph.requires[String(id)] ?? [];
+    let level = 0;
+    prereqs.forEach((prereq) => {
+      if (allowedIds && !allowedIds.has(prereq)) {
+        return;
+      }
+      const prereqLevel = levelsById[toTopicKey(prereq)];
+      level = Math.max(level, (prereqLevel ?? 0) + 1);
+    });
+    levelsById[toTopicKey(id)] = level;
+    if (!layers[level]) {
+      layers[level] = { level, topicIds: [] };
+    }
+    layers[level]?.topicIds.push(id);
+  });
+
+  return {
+    layers: layers.filter((layer): layer is TopicLayer => Boolean(layer)),
+    levelsById,
+  };
+};

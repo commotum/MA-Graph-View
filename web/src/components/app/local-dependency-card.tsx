@@ -18,6 +18,17 @@ import { cn } from "@/lib/utils";
 type LocalDependencyCardProps = {
   graph: GraphData;
   selectedTopicId: number | null;
+  title?: string;
+  description?: string;
+  descriptionTemplate?: string;
+  view?: ViewMode;
+  showViewToggle?: boolean;
+  showCollapseToggle?: boolean;
+  defaultDepth?: number;
+  depth?: number;
+  onDepthChange?: (depth: number) => void;
+  minDepth?: number;
+  maxDepth?: number;
 };
 
 type Direction = "prereqs" | "unlocks";
@@ -507,19 +518,51 @@ const MergedDependencyList = ({
 export function LocalDependencyCard({
   graph,
   selectedTopicId,
+  title,
+  description,
+  descriptionTemplate,
+  view,
+  showViewToggle,
+  showCollapseToggle,
+  defaultDepth,
+  depth,
+  onDepthChange,
+  minDepth,
+  maxDepth,
 }: LocalDependencyCardProps) {
   const router = useRouter();
-  const [mode, setMode] = React.useState<ViewMode>("prereqs");
-  const [depth, setDepth] = React.useState(3);
+  const [mode, setMode] = React.useState<ViewMode>(view ?? "prereqs");
+  const [internalDepth, setInternalDepth] = React.useState(defaultDepth ?? 3);
   const [collapseByModule, setCollapseByModule] = React.useState(true);
+  const effectiveMode = view ?? mode;
+  const resolvedDepth = depth ?? internalDepth;
+  const minDepthValue = minDepth ?? DEPTH_MIN;
+  const maxDepthValue = maxDepth ?? DEPTH_MAX;
+  const clampedDepth = Math.min(maxDepthValue, Math.max(minDepthValue, resolvedDepth));
+  const isDepthControlled = depth !== undefined;
+  const depthChangeDisabled = isDepthControlled && !onDepthChange;
+  const shouldShowViewToggle = showViewToggle ?? view === undefined;
+  const shouldShowCollapseToggle = showCollapseToggle ?? true;
+  const resolvedTitle = title ?? "Local Dependencies";
+
+  React.useEffect(() => {
+    if (view) {
+      setMode(view);
+    }
+  }, [view]);
+  React.useEffect(() => {
+    if (!isDepthControlled && defaultDepth !== undefined) {
+      setInternalDepth(defaultDepth);
+    }
+  }, [defaultDepth, isDepthControlled]);
 
   const prereqEntries = React.useMemo(
-    () => buildSliceEntries(graph, selectedTopicId, "prereqs", depth),
-    [graph, selectedTopicId, depth]
+    () => buildSliceEntries(graph, selectedTopicId, "prereqs", clampedDepth),
+    [graph, selectedTopicId, clampedDepth]
   );
   const unlockEntries = React.useMemo(
-    () => buildSliceEntries(graph, selectedTopicId, "unlocks", depth),
-    [graph, selectedTopicId, depth]
+    () => buildSliceEntries(graph, selectedTopicId, "unlocks", clampedDepth),
+    [graph, selectedTopicId, clampedDepth]
   );
   const mergedEntries = React.useMemo(
     () => mergeEntries(prereqEntries, unlockEntries),
@@ -534,57 +577,86 @@ export function LocalDependencyCard({
   );
 
   if (selectedTopicId === null) {
+    const emptyDescription =
+      effectiveMode === "prereqs"
+        ? "Select a topic to explore prerequisites."
+        : effectiveMode === "unlocks"
+          ? "Select a topic to explore unlocks."
+          : "Select a topic to explore prerequisites and unlocks.";
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Local Dependencies</CardTitle>
-          <CardDescription>Select a topic to explore prerequisites and unlocks.</CardDescription>
+          <CardTitle>{resolvedTitle}</CardTitle>
+          <CardDescription>{emptyDescription}</CardDescription>
         </CardHeader>
       </Card>
     );
   }
 
+  const resolvedDescription =
+    description ??
+    (descriptionTemplate
+      ? descriptionTemplate.replace("{depth}", String(clampedDepth))
+      : shouldShowViewToggle
+        ? `Explore prerequisites and unlocks up to ${clampedDepth} hops.`
+        : effectiveMode === "prereqs"
+          ? `Explore prerequisites up to ${clampedDepth} hops.`
+          : effectiveMode === "unlocks"
+            ? `Explore unlocks up to ${clampedDepth} hops.`
+            : `Explore prerequisites and unlocks up to ${clampedDepth} hops.`);
+
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Local Dependencies</CardTitle>
-        <CardDescription>Explore prerequisites and unlocks up to {depth} hops.</CardDescription>
+        <CardTitle>{resolvedTitle}</CardTitle>
+        <CardDescription>{resolvedDescription}</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className="flex flex-wrap items-center gap-4">
-          <ToggleGroup
-            type="single"
-            value={mode}
-            onValueChange={(value) => setMode((value as ViewMode) || "prereqs")}
-            variant="outline"
-            size="sm"
-          >
-          <ToggleGroupItem value="prereqs">Prereqs</ToggleGroupItem>
-          <ToggleGroupItem value="unlocks">Unlocks</ToggleGroupItem>
-          <ToggleGroupItem value="both">Neighborhood</ToggleGroupItem>
-        </ToggleGroup>
-          <label className="flex items-center gap-2 text-xs text-muted-foreground">
-            <input
-              type="checkbox"
-              checked={collapseByModule}
-              onChange={(event) => setCollapseByModule(event.target.checked)}
-              className="border-input text-primary h-4 w-4 rounded-sm"
-            />
-            Collapse by module
-          </label>
+          {shouldShowViewToggle ? (
+            <ToggleGroup
+              type="single"
+              value={effectiveMode}
+              onValueChange={(value) => setMode((value as ViewMode) || "prereqs")}
+              variant="outline"
+              size="sm"
+            >
+              <ToggleGroupItem value="prereqs">Prereqs</ToggleGroupItem>
+              <ToggleGroupItem value="unlocks">Unlocks</ToggleGroupItem>
+              <ToggleGroupItem value="both">Neighborhood</ToggleGroupItem>
+            </ToggleGroup>
+          ) : null}
+          {shouldShowCollapseToggle ? (
+            <label className="flex items-center gap-2 text-xs text-muted-foreground">
+              <input
+                type="checkbox"
+                checked={collapseByModule}
+                onChange={(event) => setCollapseByModule(event.target.checked)}
+                className="border-input text-primary h-4 w-4 rounded-sm"
+              />
+              Collapse by module
+            </label>
+          ) : null}
           <div className="flex items-center gap-3">
-            <span className="text-xs text-muted-foreground">Depth {depth}</span>
+            <span className="text-xs text-muted-foreground">Depth {clampedDepth}</span>
             <input
               type="range"
-              min={DEPTH_MIN}
-              max={DEPTH_MAX}
-              value={depth}
-              onChange={(event) => setDepth(Number(event.target.value))}
-              className="accent-primary h-2 w-32 cursor-pointer"
+              min={minDepthValue}
+              max={maxDepthValue}
+              value={clampedDepth}
+              onChange={(event) => {
+                const nextDepth = Number(event.target.value);
+                if (!isDepthControlled) {
+                  setInternalDepth(nextDepth);
+                }
+                onDepthChange?.(nextDepth);
+              }}
+              disabled={depthChangeDisabled}
+              className="accent-primary h-2 w-32 cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
             />
           </div>
         </div>
-        {mode === "both" ? (
+        {effectiveMode === "both" ? (
           <MergedDependencyList
             graph={graph}
             title="Neighborhood (Prereqs + Unlocks)"
@@ -594,7 +666,7 @@ export function LocalDependencyCard({
             selectedTopicId={selectedTopicId}
             onSelect={handleSelect}
           />
-        ) : mode === "prereqs" ? (
+        ) : effectiveMode === "prereqs" ? (
           <DependencyList
             graph={graph}
             title="Prerequisites"
