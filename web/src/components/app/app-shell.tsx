@@ -7,13 +7,14 @@ import { AppSidebar } from "@/components/app/app-sidebar";
 
 type AppShellProps = {
   graph: GraphData;
+  selectedTopicId: number | null;
   children: ReactNode;
 };
 
-export function AppShell({ graph, children }: AppShellProps) {
+export function AppShell({ graph, selectedTopicId, children }: AppShellProps) {
   return (
     <SidebarProvider>
-      <AppSidebar graph={graph} />
+      <AppSidebar graph={graph} selectedTopicId={selectedTopicId} />
       <SidebarInset>
         <header className="sticky top-0 z-10 flex items-center gap-3 border-b bg-background px-4 py-3">
           <SidebarTrigger />
