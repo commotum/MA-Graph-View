@@ -1,5 +1,6 @@
 import { AppShell } from "@/components/app/app-shell";
 import { GraphSummaryCard } from "@/components/app/graph-summary-card";
+import { LocalDependencyCard } from "@/components/app/local-dependency-card";
 import { TopologicalListCard } from "@/components/app/topological-list-card";
 import { TopicBreadcrumbsCard } from "@/components/app/topic-breadcrumbs-card";
 import { TopicDetailCard } from "@/components/app/topic-detail-card";
@@ -10,7 +11,7 @@ import { buildTopicSearchItems } from "@/lib/topic-search";
 type SearchParams = Record<string, string | string[] | undefined>;
 
 type PageProps = {
-  searchParams?: SearchParams;
+  searchParams?: SearchParams | Promise<SearchParams>;
 };
 
 const getSearchParam = (value: string | string[] | undefined): string | undefined =>
@@ -39,7 +40,8 @@ const resolveTopicId = (graph: GraphData, searchParams?: SearchParams): number |
 
 export default async function Home({ searchParams }: PageProps) {
   const graph = await getGraph();
-  const topicId = resolveTopicId(graph, searchParams);
+  const resolvedSearchParams = await Promise.resolve(searchParams);
+  const topicId = resolveTopicId(graph, resolvedSearchParams);
   const topicSearchItems = buildTopicSearchItems(graph);
 
   return (
@@ -54,6 +56,7 @@ export default async function Home({ searchParams }: PageProps) {
           <GraphSummaryCard graph={graph} />
           <TopicDetailCard graph={graph} topicId={topicId} />
         </div>
+        <LocalDependencyCard graph={graph} selectedTopicId={topicId} />
         <TopologicalListCard graph={graph} selectedTopicId={topicId} />
       </>
     </AppShell>
