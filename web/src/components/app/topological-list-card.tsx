@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -119,6 +119,7 @@ export function TopologicalListCard({
   graph,
   selectedTopicId,
 }: TopologicalListCardProps) {
+  const router = useRouter();
   const [courseId, setCourseId] = React.useState(ALL_VALUE);
   const [unitId, setUnitId] = React.useState(ALL_VALUE);
   const [moduleId, setModuleId] = React.useState(ALL_VALUE);
@@ -164,6 +165,13 @@ export function TopologicalListCard({
     setUnitId(value);
     setModuleId(ALL_VALUE);
   };
+
+  const handleSelect = React.useCallback(
+    (id: number) => {
+      router.push(`/?topic=${id}`);
+    },
+    [router]
+  );
 
   if (graph.stats.has_cycle) {
     const cycleNodes = graph.graph.cycle_nodes;
@@ -257,10 +265,11 @@ export function TopologicalListCard({
             <ul className="divide-y divide-border">
               {filteredItems.map((item) => (
                 <li key={item.id}>
-                  <Link
-                    href={`/?topic=${item.id}`}
+                  <button
+                    type="button"
+                    onClick={() => handleSelect(item.id)}
                     className={cn(
-                      "flex flex-col gap-2 px-4 py-3 transition hover:bg-muted/40",
+                      "flex w-full flex-col gap-2 px-4 py-3 text-left transition hover:bg-muted/40",
                       selectedTopicId === item.id && "bg-muted/60"
                     )}
                   >
@@ -276,7 +285,7 @@ export function TopologicalListCard({
                     <div className="text-xs text-muted-foreground">
                       {formatPlacements(item.placements)}
                     </div>
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>
