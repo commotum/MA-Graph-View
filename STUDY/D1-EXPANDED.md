@@ -1,0 +1,94 @@
+- [ ] **MF3 1.3.1 – The Sum of a Finite Geometric Series**
+  - [ ] Determining Indexes of Terms in Geometric Sequences
+    - [ ] Translating Between Explicit and Recursive Formulas for Geometric Sequences
+      - [ ] The Nth Term of a Geometric Sequence
+    - [ ] Finding the Common Ratio of a Geometric Sequence Given Two Terms
+- [ ] **MF3 1.3.2 – The Sum of the First N Terms of a Geometric Series**
+  - [ ] **MF3 1.3.1 – The Sum of a Finite Geometric Series**
+- [ ] **MF3 1.3.3 – Writing Geometric Series in Sigma Notation**
+  - [ ] Sigma Notation
+    - [ ] Introduction to Sequences
+      - [ ] The Domain of a Function
+  - [ ] Determining Indexes of Terms in Geometric Sequences
+- [ ] **MF3 1.3.4 – Sums of Finite Geometric Series Given in Sigma Notation**
+  - [ ] **MF3 1.3.1 – The Sum of a Finite Geometric Series**
+  - [ ] **MF3 1.3.3 – Writing Geometric Series in Sigma Notation**
+- [ ] **MF3 1.4.1 – Convergence of Geometric Sequences**
+  - [ ] The Nth Term of a Geometric Sequence
+    - [ ] The Recursive Formula for a Geometric Sequence
+      - [ ] Recursive Sequences
+      - [ ] Introduction to Geometric Sequences
+  - [ ] End Behavior of Functions
+    - [ ] Horizontal and Vertical Lines
+      - [ ] Graphing Linear Equations
+    - [ ] The Range of a Function
+      - [ ] Global Extrema of Functions
+- [ ] **MF3 1.4.7 – Finding the Sum of an Infinite Geometric Series**
+  - [ ] Infinite Series and Partial Sums
+    - [ ] Finding the Sum of an Arithmetic Series
+      - [ ] Expressing an Arithmetic Series in Sigma Notation
+    - [ ] **MF3 1.3.4 – Sums of Finite Geometric Series Given in Sigma Notation**
+- [ ] **MF3 1.4.10 – Convergence of Geometric Series**
+  - [ ] Writing an Infinite Geometric Series in Sigma Notation
+    - [ ] Infinite Series and Partial Sums
+  - [ ] Solving Inequalities Involving Exponential Functions
+    - [ ] Combining the Laws of Logarithms
+      - [ ] The Quotient Rule for Logarithms
+      - [ ] The Power Rule for Logarithms
+    - [ ] Solving Exponential Equations With Different Bases Using Logarithms
+      - [ ] The Product Rule for Logarithms
+      - [ ] Solving Exponential Equations With Different Bases
+    - [ ] Further Solving Linear Inequalities
+      - [ ] Solving Linear Equations Using Cross-Multiplication
+      - [ ] Representing Solutions to Inequalities on Number Lines
+  - [ ] Further Convergence of Geometric Sequences
+    - [ ] Solving Elementary Quadratic Inequalities
+      - [ ] Solving Quadratic Equations Using a Difference of Squares
+      - [ ] Absolute Value Inequalities
+      - [ ] Roots of Quadratic Functions
+      - [ ] Rationalizing Denominators
+    - [ ] **MF3 1.4.1 – Convergence of Geometric Sequences**
+    - [ ] Solving Inequalities Involving Positive and Negative Factors
+      - [ ] Compound AND Inequalities
+      - [ ] Properties of Transformed Exponential Functions
+      - [ ] Properties of Transformed Logarithmic Functions
+      - [ ] Properties of Transformed Sine and Cosine Functions
+- [ ] **MF3 5.15.1 – Simplifying Expressions Using Basic Trigonometric Identities**
+  - [ ] Dividing Rational Expressions
+    - [ ] Multiplying Rational Expressions
+      - [ ] Simplifying Rational Expressions Using Polynomial Factorization
+      - [ ] Further Factoring of Polynomials Using GCFs
+  - [ ] The Reciprocal Trigonometric Ratios
+    - [ ] Calculating Trigonometric Ratios Using the Pythagorean Theorem
+      - [ ] The Trigonometric Ratios
+  - [ ] Adding Rational Expressions With No Common Factors in the Denominator
+    - [ ] Adding and Subtracting Rational Expressions
+      - [ ] Collecting Like Terms in a Linear Expression
+      - [ ] Simplifying Rational Expressions by Factoring
+- [ ] **MF3 5.15.2 – Simplifying Expressions Using the Pythagorean Identity**
+  - [ ] **MF3 5.15.1 – Simplifying Expressions Using Basic Trigonometric Identities**
+- [ ] **MF3 5.16.1 – The Sum and Difference Formulas for Sine**
+  - [ ] Evaluating Trigonometric Expressions
+    - [ ] Finding Trigonometric Ratios of Special Angles Using the Unit Circle
+      - [ ] Finding Trigonometric Ratios of Quadrantal Angles
+      - [ ] Introduction to Sequences
+- [ ] **MF3 5.16.2 – The Sum and Difference Formulas for Cosine**
+  - [ ] Evaluating Trigonometric Expressions
+- [ ] **MF3 5.16.3 – Writing Sums of Trigonometric Functions in Amplitude-Phase Form**
+  - [ ] **MF3 5.15.2 – Simplifying Expressions Using the Pythagorean Identity**
+  - [ ] **MF3 5.16.1 – The Sum and Difference Formulas for Sine**
+  - [ ] **MF3 5.16.2 – The Sum and Difference Formulas for Cosine**
+- [ ] **MF3 5.16.4 – The Double-Angle Formula for Sine**
+  - [ ] **MF3 5.16.1 – The Sum and Difference Formulas for Sine**
+- [ ] **MF3 6.18.3 – Euler’s Formula**
+  - [ ] **MF3 6.18.1 – The Polar Form of a Complex Number**
+- [ ] **MF3 6.18.1 – The Polar Form of a Complex Number**
+  - [ ] Dividing Complex Numbers
+    - [ ] Special Properties of the Complex Conjugate
+      - [ ] The Complex Conjugate
+  - [ ] Converting from Polar Coordinates to Cartesian Coordinates
+    - [ ] Introduction to Polar Coordinates
+      - [ ] The Distance Formula
+      - [ ] Calculating Reference Angles
+- [ ] **MF3 6.18.2 – De Moivre’s Theorem**
+  - [ ] **MF3 6.18.1 – The Polar Form of a Complex Number**
