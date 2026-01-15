@@ -1,11 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeScript } from "@/components/app/theme-script";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = localFont({
+  src: [
+    {
+      path: "./fonts/InterVariable.woff2",
+      style: "normal",
+      weight: "100 900",
+    },
+    {
+      path: "./fonts/InterVariable-Italic.woff2",
+      style: "italic",
+      weight: "100 900",
+    },
+  ],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -29,7 +42,7 @@ export default function RootLayout({
         <ThemeScript />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
