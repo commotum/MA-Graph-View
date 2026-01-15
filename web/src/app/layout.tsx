@@ -41,9 +41,7 @@ export default function RootLayout({
       <head>
         <ThemeScript />
       </head>
-      <body
-        className={`${inter.variable} ${geistMono.variable} antialiased font-sans`}
-      >
+      <body className={`${inter.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
