@@ -4,6 +4,12 @@ import * as React from "react";
 import { useRouter } from "next/navigation";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu";
 
 import type { GraphData } from "@/lib/graph-data";
 import { selectTopicLabel } from "@/lib/graph-data";
@@ -135,31 +141,50 @@ export function TangleTreeCard({
             {layout.nodes.map((node) => {
               const label = selectTopicLabel(graph, node.id);
               const isSelected = selectedTopicId === node.id;
+              const studyUrl = `https://mathacademy.com/topics/${node.id}`;
+              const nodeStrokeWidth = 5;
+              const interactionStrokeWidth = 8;
+              const labelOffset = 4;
               return (
-                <g
-                  key={node.id}
-                  onClick={() => handleSelect(node.id)}
-                  className="cursor-pointer"
-                >
-                  <path
-                    d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${
-                      node.y + node.height / 2
-                    }`}
-                    stroke={isSelected ? "var(--primary)" : "currentColor"}
-                    strokeWidth={isSelected ? 6 : 4}
-                    strokeLinecap="round"
-                  />
-                  <text
-                    x={node.x + 6}
-                    y={node.y - node.height / 2 - 4}
-                    fill={isSelected ? "var(--primary)" : "currentColor"}
-                    fontSize="10"
-                    className={cn(isSelected && "font-semibold")}
-                  >
-                    {label}
-                  </text>
-                  <title>{label}</title>
-                </g>
+                <ContextMenu key={node.id}>
+                  <ContextMenuTrigger asChild>
+                    <g onClick={() => handleSelect(node.id)} className="cursor-pointer">
+                      <path
+                        d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${
+                          node.y + node.height / 2
+                        }`}
+                        stroke={isSelected ? "var(--primary)" : "var(--foreground)"}
+                        strokeWidth={interactionStrokeWidth}
+                        strokeLinecap="round"
+                      />
+                      <path
+                        d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${
+                          node.y + node.height / 2
+                        }`}
+                        stroke="var(--background)"
+                        strokeWidth={nodeStrokeWidth}
+                        strokeLinecap="round"
+                      />
+                      <text
+                        x={node.x + labelOffset}
+                        y={node.y - node.height / 2 - 4}
+                        fill={isSelected ? "var(--primary)" : "currentColor"}
+                        fontSize="10"
+                        className={cn(isSelected && "font-semibold")}
+                      >
+                        {label}
+                      </text>
+                      <title>{label}</title>
+                    </g>
+                  </ContextMenuTrigger>
+                  <ContextMenuContent>
+                    <ContextMenuItem asChild>
+                      <a href={studyUrl} target="_blank" rel="noreferrer">
+                        Go Study!
+                      </a>
+                    </ContextMenuItem>
+                  </ContextMenuContent>
+                </ContextMenu>
               );
             })}
           </svg>
