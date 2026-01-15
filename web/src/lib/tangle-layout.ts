@@ -191,12 +191,12 @@ const buildLevelsFromFocus = (
     levelBuckets[0] = [focusTopicId, ...(levelBuckets[0] ?? [])];
   }
 
-  return levelBuckets
-    .map((topicIds, depth) => {
-      if (!topicIds) {
-        return null;
-      }
-      return {
+  return levelBuckets.flatMap((topicIds, depth) => {
+    if (!topicIds) {
+      return [];
+    }
+    return [
+      {
         level: depth,
         nodes: topicIds.map((id) => ({
           id,
@@ -210,9 +210,9 @@ const buildLevelsFromFocus = (
           height: 0,
         })),
         bundles: [],
-      };
-    })
-    .filter((level): level is TangleLevel => Boolean(level));
+      },
+    ];
+  });
 };
 
 export const buildTangleLayout = (
