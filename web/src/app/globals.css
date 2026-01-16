@@ -119,8 +119,12 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    background-color: var(--sidebar);
+  }
   body {
     @apply bg-background text-foreground font-sans;
+    border-radius: var(--radius-4xl);
   }
 
   .ma-logo {

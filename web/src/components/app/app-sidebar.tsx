@@ -11,6 +11,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarHeader,
+  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Image from "next/image";
@@ -46,22 +47,23 @@ export function AppSidebar({
 
   return (
     <Sidebar variant="inset" collapsible="offcanvas">
-      <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild>
-              <Link href="/">
-                <Image
-                  src="/ma-logo.svg"
-                  alt="Math Academy"
-                  width={160}
-                  height={92}
-                  className="ma-logo h-5 w-auto"
-                />
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+      <SidebarHeader className="flex-row items-center justify-between gap-2">
+        <a
+          href="https://mathacademy.com/learn"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex size-7 items-center justify-center rounded-md hover:bg-sidebar-accent"
+          aria-label="Math Academy Learn (opens in a new tab)"
+        >
+          <Image
+            src="/ma-logo.svg"
+            alt="Math Academy"
+            width={160}
+            height={92}
+            className="ma-logo h-4 w-auto shrink-0"
+          />
+        </a>
+        <SidebarTrigger aria-label="Close sidebar" />
       </SidebarHeader>
       <SidebarContent className="group-data-[collapsible=icon]:hidden pt-2">
         {courses.map((course, index) => {

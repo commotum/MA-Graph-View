@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
+import { PanelLeftIcon } from "lucide-react";
+import Image from "next/image";
 
 import type { GraphData } from "@/lib/graph-data";
 import { AppSidebar } from "@/components/app/app-sidebar";
@@ -37,7 +39,20 @@ export function AppShell({
       <AppSidebar graph={graph} selectedTopicId={selectedTopicId} />
       <SidebarInset>
         <header className="sticky top-0 z-10 flex items-center gap-3 border-b bg-background px-4 py-3">
-          <SidebarTrigger />
+          <SidebarTrigger className="md:hidden" />
+          <SidebarTrigger
+            aria-label="Open sidebar"
+            className="group/logo relative hidden size-7 p-0 md:group-data-[state=collapsed]/sidebar-wrapper:inline-flex"
+          >
+            <Image
+              src="/ma-logo.svg"
+              alt="Math Academy"
+              width={160}
+              height={92}
+              className="ma-logo h-4 w-auto shrink-0 transition-opacity group-hover/logo:opacity-0"
+            />
+            <PanelLeftIcon className="absolute inset-0 m-auto size-4 opacity-0 transition-opacity group-hover/logo:opacity-100" />
+          </SidebarTrigger>
           <div className="flex-1">
             <div className="text-sm text-muted-foreground">{resolvedSubtitle}</div>
             <h1 className="text-lg font-semibold text-foreground">{resolvedTitle}</h1>
