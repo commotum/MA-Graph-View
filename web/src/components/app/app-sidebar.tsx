@@ -10,8 +10,10 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
+  SidebarHeader,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
+import Image from "next/image";
 
 import type { GraphData } from "@/lib/graph-data";
 import {
@@ -43,8 +45,25 @@ export function AppSidebar({
   const openModuleIds = new Set(placementDetails.map((placement) => placement.moduleId));
 
   return (
-    <Sidebar collapsible="offcanvas">
-      <SidebarContent className="group-data-[collapsible=icon]:hidden pt-4">
+    <Sidebar variant="inset" collapsible="offcanvas">
+      <SidebarHeader>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton size="lg" asChild>
+              <Link href="/">
+                <Image
+                  src="/ma-logo.svg"
+                  alt="Math Academy"
+                  width={160}
+                  height={92}
+                  className="ma-logo h-5 w-auto"
+                />
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarHeader>
+      <SidebarContent className="group-data-[collapsible=icon]:hidden pt-2">
         {courses.map((course, index) => {
           const units = selectUnitsByCourse(graph, course.id);
           const openCourse =

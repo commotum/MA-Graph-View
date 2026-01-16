@@ -122,6 +122,14 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+
+  .ma-logo {
+    filter: none;
+  }
+
+  .dark .ma-logo {
+    filter: invert(1);
+  }
 }
 
 @layer base {
