@@ -1,82 +1,82 @@
 id,name
-The Greatest Common Factor of Two Monomials
-Factoring Polynomials Using GCFs
-Factoring Perfect Square Trinomials
-Factoring Perfect Square Trinomials With Leading Coefficients
-Factoring Differences of Squares
-Factoring Trinomials
-Factoring Trinomials Using Common Factors
-Factoring Trinomials With Leading Coefficients
-Further Factoring Trinomials With Leading Coefficients
-The Quadratic Formula
-The Discriminant of a Quadratic Equation
-Further Factoring of Polynomials Using GCFs
-Factoring Higher-Order Polynomials as a Difference of Squares
-Factoring Cubic Expressions by Grouping
-Factoring Sums and Differences of Cubes
-Factoring Biquadratic Expressions
-The Factor Theorem
-Factoring Cubic Polynomials Using the Factor Theorem
-Factoring Quartic Polynomials Using the Factor Theorem
-The Remainder Theorem
-The Rational Roots Theorem
-Adding and Subtracting Complex Numbers
-Multiplying Complex Numbers
-Solving Quadratic Equations With Complex Roots
-The Cyclic Property of the Imaginary Unit
-The Magnitude of a Complex Number
-The Argument of a Complex Number
-Expressing Rational Functions as Sums of Partial Fractions
-Sigma Notation
-Properties of Finite Series
-Introduction to Geometric Sequences
-The Recursive Formula for a Geometric Sequence
-The Nth Term of a Geometric Sequence
-Translating Between Explicit and Recursive Formulas for Geometric Sequences
-Finding the Common Ratio of a Geometric Sequence Given Two Terms
-Determining Indexes of Terms in Geometric Sequences
-Graphing Sine and Cosine
-Describing Properties of the Sine Function
-Describing Properties of the Cosine Function
-Vertical Translations of Trigonometric Functions
-Vertical Stretches of Trigonometric Functions
-Horizontal Translations of Trigonometric Functions
-Horizontal Stretches of Trigonometric Functions
-Combining Graph Transformations of Sine and Cosine
-Properties of Transformed Sine and Cosine Functions
-Finding Zeros and Extrema of Transformed Sine and Cosine Functions
-The Sum of a Finite Geometric Series
-The Sum of the First N Terms of a Geometric Series
-Writing Geometric Series in Sigma Notation
-Sums of Finite Geometric Series Given in Sigma Notation
-Convergence of Geometric Sequences
-Finding the Sum of an Infinite Geometric Series
-Convergence of Geometric Series
-Simplifying Expressions Using Basic Trigonometric Identities
-Simplifying Expressions Using the Pythagorean Identity
-Alternate Forms of the Pythagorean Identity
-Simplifying Expressions Using the Secant-Tangent Identity
-Alternate Forms of the Secant-Tangent Identity
-Simplifying Trigonometric Expressions Using the Cotangent-Cosecant Identity
-The Sum and Difference Formulas for Sine
-The Sum and Difference Formulas for Cosine
-Writing Sums of Trigonometric Functions in Amplitude-Phase Form
-The Double-Angle Formula for Sine
-The Double-Angle Formula for Cosine
-The Complex Conjugate
-Special Properties of the Complex Conjugate
-Dividing Complex Numbers
-The Polar Form of a Complex Number
-De Moivre's Theorem
-Euler's Formula
-The Roots of Unity
-Properties of Roots of Unity
-The Fundamental Theorem of Algebra with Cubic Equations
-Solving Cubic Equations With Complex Roots
-The Fundamental Theorem of Algebra with Quartic Equations
-Solving Quartic Equations With Complex Roots
-Maclaurin Series
-Taylor Series
-Representing Functions as Power Series
-Recognizing Standard Maclaurin Series
-Expressing Rational Functions as Sums of Partial Fractions
+2181,The Greatest Common Factor of Two Monomials
+353,Factoring Polynomials Using GCFs
+352,Factoring Perfect Square Trinomials
+382,Factoring Perfect Square Trinomials With Leading Coefficients
+370,Factoring Differences of Squares
+89,Factoring Trinomials
+3577,Factoring Trinomials Using Common Factors
+372,Factoring Trinomials With Leading Coefficients
+4951,Further Factoring Trinomials With Leading Coefficients
+422,The Quadratic Formula
+425,The Discriminant of a Quadratic Equation
+2337,Further Factoring of Polynomials Using GCFs
+660,Factoring Higher-Order Polynomials as a Difference of Squares
+428,Factoring Cubic Expressions by Grouping
+441,Factoring Sums and Differences of Cubes
+2336,Factoring Biquadratic Expressions
+846,The Factor Theorem
+2119,Factoring Cubic Polynomials Using the Factor Theorem
+104,Factoring Quartic Polynomials Using the Factor Theorem
+847,The Remainder Theorem
+757,The Rational Roots Theorem
+31,Adding and Subtracting Complex Numbers
+33,Multiplying Complex Numbers
+895,Solving Quadratic Equations With Complex Roots
+32,The Cyclic Property of the Imaginary Unit
+34,The Magnitude of a Complex Number
+893,The Argument of a Complex Number
+1060,Expressing Rational Functions as Sums of Partial Fractions
+673,Sigma Notation
+3958,Properties of Finite Series
+679,Introduction to Geometric Sequences
+1818,The Recursive Formula for a Geometric Sequence
+680,The Nth Term of a Geometric Sequence
+2215,Translating Between Explicit and Recursive Formulas for Geometric Sequences
+2534,Finding the Common Ratio of a Geometric Sequence Given Two Terms
+685,Determining Indexes of Terms in Geometric Sequences
+1491,Graphing Sine and Cosine
+3540,Describing Properties of the Sine Function
+3557,Describing Properties of the Cosine Function
+206,Vertical Translations of Trigonometric Functions
+1661,Vertical Stretches of Trigonometric Functions
+1659,Horizontal Translations of Trigonometric Functions
+784,Horizontal Stretches of Trigonometric Functions
+275,Combining Graph Transformations of Sine and Cosine
+2062,Properties of Transformed Sine and Cosine Functions
+5088,Finding Zeros and Extrema of Transformed Sine and Cosine Functions
+1016,The Sum of a Finite Geometric Series
+692,The Sum of the First N Terms of a Geometric Series
+1017,Writing Geometric Series in Sigma Notation
+690,Sums of Finite Geometric Series Given in Sigma Notation
+1088,Convergence of Geometric Sequences
+691,Finding the Sum of an Infinite Geometric Series
+684,Convergence of Geometric Series
+203,Simplifying Expressions Using Basic Trigonometric Identities
+207,Simplifying Expressions Using the Pythagorean Identity
+205,Alternate Forms of the Pythagorean Identity
+1454,Simplifying Expressions Using the Secant-Tangent Identity
+3857,Alternate Forms of the Secant-Tangent Identity
+1455,Simplifying Trigonometric Expressions Using the Cotangent-Cosecant Identity
+270,The Sum and Difference Formulas for Sine
+274,The Sum and Difference Formulas for Cosine
+1076,Writing Sums of Trigonometric Functions in Amplitude-Phase Form
+271,The Double-Angle Formula for Sine
+831,The Double-Angle Formula for Cosine
+892,The Complex Conjugate
+905,Special Properties of the Complex Conjugate
+227,Dividing Complex Numbers
+894,The Polar Form of a Complex Number
+925,De Moivre's Theorem
+898,Euler's Formula
+3400,The Roots of Unity
+4050,Properties of Roots of Unity
+896,The Fundamental Theorem of Algebra with Cubic Equations
+3653,Solving Cubic Equations With Complex Roots
+897,The Fundamental Theorem of Algebra with Quartic Equations
+3657,Solving Quartic Equations With Complex Roots
+340,Maclaurin Series
+3826,Taylor Series
+885,Representing Functions as Power Series
+884,Recognizing Standard Maclaurin Series
+1060,Expressing Rational Functions as Sums of Partial Fractions
