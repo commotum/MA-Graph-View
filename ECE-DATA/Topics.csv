@@ -1,1026 +1,459 @@
 id,name
-14,Imaginary Numbers
-28,The Change of Base Formula for Logarithms
-29,Adding and Subtracting Matrices
-30,Combining the Laws of Logarithms
-31,Adding and Subtracting Complex Numbers
-32,The Cyclic Property of the Imaginary Unit
-33,Multiplying Complex Numbers
-34,The Magnitude of a Complex Number
-35,The Power Rule for Differentiation
-37,The Power and Root Rules for Limits
-38,Solving One-Step Linear Inequalities
-40,Solving One-Step Multiplication and Division Equations
-43,The Constant Multiple Rule for Indefinite Integrals
-45,Sets
-57,Implicit Differentiation
-63,Introduction to Algebraic Expressions
-64,Evaluating Linear Expressions
-65,Solving One-Step Addition and Subtraction Equations
-66,Solving Two-Step Equations
-67,Solving Linear Equations With Fractional Coefficients
-68,Simplifying Rational Expressions
-71,The Product Rule for Exponents With Algebraic Expressions
-73,Fibonacci Sequences
-75,Rules of Absolute Value
-79,"Monomials, Binomials and Trinomials"
-81,Adding and Subtracting Polynomials
-84,Graphs of General Quadratic Functions
-85,The Greatest Common Factor of Two Linear Expressions
-86,Rationalizing Denominators With Two Terms
-87,Factoring Linear Expressions
-88,Multiplicities of the Roots of Polynomials
-89,Factoring Trinomials
-92,The Cartesian Coordinate System
-94,Two-Variable Linear Equations and Their Solutions
-95,Graphing Linear Equations
-96,Absolute Value Expressions
-97,Horizontal and Vertical Lines
-101,Solving Systems of Nonlinear Equations Using Graphs
-104,Factoring Quartic Polynomials Using the Factor Theorem
-112,Properties of the Unit Circle in the First Quadrant
-116,Solving Radical Equations
-117,Vertical Reflections of Quadratic Functions
-118,Solving Quadratic Inequalities Using the Sign Table Method
-121,Evaluating Expressions With Positive Integer Exponents
-125,Exponents With Rational Bases
-126,Estimating Means and Variances For Grouped Data
-130,Probability From Experimental Data
-131,Compound Events in Probability From Experimental Data
-132,Computing Probabilities Using Combinatorics
-133,Roots of Rational Functions
-134,Collecting Like Terms in a Linear Expression
-135,Applying the Distributive Law With Linear Expressions
-137,Distributing the Negative Sign in a Linear Expression
-138,Simplifying Linear Expressions Using the Distributive Law
-140,The Arithmetic of Functions
-141,Finding Points on Transformed Curves
-142,Creating Exponential Decay Expressions
-146,Scalar Multiplication of Matrices
-147,Multiplying Square Matrices
-152,The Determinant of a 2x2 Matrix
-153,The Determinant of a 3x3 Matrix
-154,Calculating the Inverse of a 3x3 Matrix Using the Cofactor Method
-155,Representing 3x3 Systems of Equations Using a Matrix Product
-157,The Complex Plane
-159,Solving Equations by Equating Real and Imaginary Parts
-161,The Rules of Sum and Product
-165,Piecewise Functions
-166,Extending the Trigonometric Ratios to Negative Angles
-167,Negative Angles in the Coordinate Plane
-168,The Law of Sines
-169,The Law of Cosines
-175,Addition and Scalar Multiplication of Cartesian Vectors in 3D
-176,Calculating the Magnitude of Cartesian Vectors in 2D
-177,Calculating the Dot Product Using Components
-178,Inequalities
-183,Independent Events
-203,Simplifying Expressions Using Basic Trigonometric Identities
-204,Extending the Trigonometric Ratios Using the Unit Circle
-205,Alternate Forms of the Pythagorean Identity
-206,Vertical Translations of Trigonometric Functions
-207,Simplifying Expressions Using the Pythagorean Identity
-209,Evaluating Expressions Containing Inverse Trigonometric Functions
-226,Solving Logarithmic Equations
-227,Dividing Complex Numbers
-232,The Transpose of a Matrix
-233,The Minors of a 3x3 Matrix
-236,Units of Length
-239,Interval Notation
-243,Calculating the Dot Product Using Angle and Magnitude
-244,Addition and Scalar Multiplication of Cartesian Vectors in 2D
-245,Calculating the Cross Product Using Determinants
-246,The Cross Product of Two Vectors
-259,Graphing Reflections of Trigonometric Functions
-261,Coterminal Angles
-262,30-60-90 Triangles
-263,Isosceles Right Triangles
-265,The Standard Normal Distribution
-266,Solving Rational Equations Using the Flip Method
-267,The Product Rule for Exponents
-268,Finding Trigonometric Ratios of Special Angles Using the Unit Circle
-269,Finding Trigonometric Ratios of Quadrantal Angles
-270,The Sum and Difference Formulas for Sine
-271,The Double-Angle Formula for Sine
-274,The Sum and Difference Formulas for Cosine
-275,Combining Graph Transformations of Sine and Cosine
-278,The Sum and Constant Multiple Rules for Differentiation
-280,Differentiating Trigonometric Functions
-281,Second and Higher-Order Derivatives
-282,Integration Using Basic Trigonometric Identities
-283,The Fundamental Theorem of Calculus
-284,Calculating Velocity for Straight-Line Motion Using Differentiation
-285,Integrating Trigonometric Functions
-287,Calculating Related Rates With Circles and Spheres
-288,The Mean Value Theorem
-291,Differentiating an Inverse Function at a Point
-296,Interpreting the Meaning of the Derivative in Context
-297,Subtracting a Negative Number
-298,Multiplying Positive Numbers With Negative Numbers
-299,Multiplying and Dividing With Zero
-303,Differentiating Inverse Trigonometric Functions
-305,The Chain Rule With Trigonometric Functions
-308,The Antiderivative
-312,Integrating Exponential Functions
-313,Global vs. Local Extrema and Critical Points
-314,Defining Continuity at a Point
-315,Integration by Substitution With Inverse Trigonometric Functions
-316,Further Integration of Algebraic Functions Using Substitution
-317,Introduction to Integration by Parts
-322,The Zeroth Power
-323,Fractions of Fractions
-324,Conditional Probabilities From Venn Diagrams
-327,Subtracting a Positive Number From a Smaller Positive Number
-328,Adding a Negative Number
-329,Adding a Positive Number to a Negative Number
-330,Dividing With Negative Numbers
-331,Integrating Linear Rational Functions Using Substitution
-332,Calculating the Slope of a Tangent Line Using Differentiation
-333,The Integral as an Accumulation Function
-334,Integrating Algebraic Functions Using Substitution
-335,Calculating the Position Function of a Particle Using Integration
-336,The Average Rate of Change of a Function
-337,The Instantaneous Rate of Change of a Function at a Point
-338,Integrating Functions Using Polynomial Division
-339,The Second Derivative Test
-340,Maclaurin Series
-342,Integration Using Inverse Trigonometric Functions
-343,Solving Linear Equations With Variables on Both Sides
-345,Calculating Related Rates Using the Pythagorean Theorem
-347,Intersections of Intervals
-349,The Distributive Law for Polynomials
-350,Compound AND Inequalities
-352,Factoring Perfect Square Trinomials
-353,Factoring Polynomials Using GCFs
-354,Solving Many-Variable Equations
-355,Splitting Rational Expressions Into Separate Terms
-356,Solving Two-Variable Equations
-360,Squaring Binomials
-361,Multiplying Polynomials
-362,The Power Rule for Exponents With Algebraic Expressions
-363,Intervals of Concavity
-364,The Candidates Test
-370,Factoring Differences of Squares
-371,Multiplying Binomials
-372,Factoring Trinomials With Leading Coefficients
-374,The Quotient Rule for Exponents With Algebraic Expressions
-375,Solving Quadratic Equations by Factoring
-376,The Square Root of a Perfect Square With Algebraic Expressions
-378,Evaluating Logarithms
-379,Converting From Exponential to Logarithmic Form
-380,Writing Radical Expressions Using Fractional Exponents
-381,The Cube Root of a Perfect Cube With Algebraic Expressions
-382,Factoring Perfect Square Trinomials With Leading Coefficients
-384,Absolute Value Equations
-387,Verifying Solutions of Linear Inequalities
-388,Solving Compound Inequalities
-389,Simplifying Square Root Expressions Using the Product Rule
-390,Simplifying Square Root Expressions Using the Quotient Rule
-391,Solving Exponential Equations
-393,Solving Quadratic Equations with No Constant Term
-394,Solving Quadratic Equations Using a Difference of Squares
-395,The Area Between Curves Expressed as Functions of X
-396,Calculating Slopes of Straight Lines
-398,Properties of Lines Given in Slope-Intercept Form
-408,Calculating the Intersection of Two Lines
-410,Solving Systems of Nonlinear Equations
-416,Applying the Integration By Parts Twice
-418,Equations of Lines in Point-Slope Form
-419,Solving Quadratic Equations by Completing the Square
-421,Corresponding Angles
-422,The Quadratic Formula
-423,Simplifying Rational Expressions by Factoring
-424,Integration by Parts in Cyclic Cases
-425,The Discriminant of a Quadratic Equation
-426,Modeling With Linear Equations
-427,Dividing Polynomials Using Long Division
-428,Factoring Cubic Expressions by Grouping
-430,Solving Equations Using the Square Root Method
-431,Second Derivatives of Parametric Equations
-433,The Pythagorean Theorem
-434,Finding Intersections of Lines and Reciprocal Functions
-435,Multiplying Rational Expressions
-436,Dividing Rational Expressions
-437,Adding and Subtracting Rational Expressions
-440,Rational Equations With Three Terms
-441,Factoring Sums and Differences of Cubes
-443,Integration Using Substitution
-444,Integrating Functions by Completing the Square
-445,Integrating Rational Functions Using Partial Fractions
-446,Integrating Rational Functions with Repeated Factors
-447,Integrating Rational Functions with Irreducible Quadratic Factors
-450,Completing the Square
-451,Absolute Value Inequalities
-452,Vertical Reflections of Absolute Value Graphs
-453,Graphing Elementary Quadratic Functions
-454,Graphing the Cube Root Function
-455,Combining Graph Transformations of Reciprocal Functions
-456,Vertical Translations of Exponential Decay Functions
-457,Converting From Logarithmic to Exponential Form
-458,Unions of Intervals
-459,The Distance Formula
-460,The Circumference of a Circle
-461,The Finite Limit of a Function
-462,Determining Continuity from Graphs
-463,L'Hopital's Rule
-464,Quadratic Equations with Purely Imaginary Solutions
-466,Solving First-Order ODEs Using Separation of Variables
-468,Solving Quadratic Inequalities From Graphs
-469,Determining the Roots of Polynomials
-470,Introduction to Functions
-472,The Left and Right-Sided Limits of a Function
-474,Left and Right Continuity
-475,Defining Vector-Valued Functions
-477,Approximating Areas With the Left Riemann Sum
-478,Integrating Trigonometric Functions Using Substitution
-480,Solving Polynomial Equations Using the GCF
-483,Combining Geometric Transformations
-484,Adding and Subtracting Radicals
-485,Midpoints in the Coordinate Plane
-487,Solving Systems of Equations by Substitution
-490,Similarity and Similar Polygons
-491,Similarity Transformations
-493,Systems of Equations With No Solutions and Infinitely Many Solutions
-496,Interior Angles of Triangles
-510,Trigonometric Functions of Complementary Angles
-512,The Distance Formula in Three Dimensions
-516,Trigonometric Ratios With Radians
-521,Segment Bisectors and the Perpendicular Bisector Theorem
-524,Additive Inverses of Numbers
-525,Subtracting Mixed Numbers With Unlike Denominators Using Improper Fractions
-526,The Shortest Distance Between a Point and a Line
-528,Dividing Unit Fractions by Whole Numbers Using Models
-529,Dividing Whole Numbers by Unit Fractions Using Models
-530,Dividing Unit Fractions by Whole Numbers
-533,Dividing Whole Numbers by Unit Fractions
-534,Introduction to Ratios
-539,Adding Fractions and Whole Numbers
-543,Adding Fractions and Whole Numbers Using Models
-544,Subtracting Fractions and Whole Numbers Using Models
-545,Subtracting Fractions and Whole Numbers
-552,Writing Ratios Using Fractions
-553,Equivalent Ratios
-554,Ratio Tables
-557,Unit Rates
-558,Solving Problems Using Unit Rates
-561,Graphing Ratios
-562,Understanding Percentages Using Models
-563,Working With Equivalent Ratios
-564,Multiplying Unit Fractions by Whole Numbers Using Models
-565,Multiplying Fractions by Unit Fractions Using Models
-566,Multiplying Fractions by Whole Numbers: Word Problems
-567,Multiplying Fractions: Word Problems
-573,Distances Between Points in the Coordinate Plane
-577,Dilations of Figures in the Coordinate Plane
-589,Evaluating Numerical Expressions Containing Radicals
-599,Rationalizing Denominators of Algebraic Expressions
-602,Euler's Method: Calculating One Step
-604,Calculating Limits of Radical Functions Using Conjugate Multiplication
-606,Special Limits Involving Sine
-607,Evaluating Limits at Infinity by Comparing Relative Magnitudes of Functions
-609,The Trigonometric Ratios
-610,Calculating Angles in Right Triangles Using Trigonometry
-611,The Reciprocal Trigonometric Ratios
-612,Continuity Over an Interval
-613,The Second Fundamental Theorem of Calculus
-620,Rates of Change in Applied Contexts
-621,Approximating Functions Using Local Linearity and Linearization
-625,Finding the Existence of a Limit Using One-Sided Limits
-626,Definite Integrals of Piecewise Functions
-627,Calculating the Inverse of a Function
-629,Calculating Side Lengths of Right Triangles Using Trigonometry
-631,Visual Representations of Functions
-632,Properties of Definite Integrals Involving the Limits of Integration
-633,Calculating Trigonometric Ratios Using the Pythagorean Theorem
-634,Combining Graph Transformations: Three or More Operations
-640,Estimating Derivatives Using a Central Difference Quotient
-643,Identifying Terms in Linear Expressions
-644,Identifying Like Terms in a Linear Expression
-645,Identifying Coefficients and Constants in Linear Expressions
-648,Finding Displacement Vectors in Two Dimensions Using Integration
-651,Solving Linear Equations by Clearing a Rational Expression
-652,Powers of Negative One
-653,Modeling With Linear Equations in Two Variables
-654,Graph Transformations of Tangent and Cotangent
-655,Introduction to Polynomials
-657,The Degree of a Polynomial
-660,Factoring Higher-Order Polynomials as a Difference of Squares
-661,Roots of Quadratic Functions
-665,Graphing Strict Two-Variable Linear Inequalities
-666,Determining Circle Properties by Completing the Square
-667,Arithmetic Sequences
-668,The Nth Term of an Arithmetic Sequence
-669,Finding the Common Difference of an Arithmetic Sequence
-672,Determining Indexes of Terms in Arithmetic Sequences
-673,Sigma Notation
-675,Finding the Sum of an Arithmetic Series
-676,Calculating the Number of Terms in an Arithmetic Series
-677,Finding the First Term of an Arithmetic Series
-679,Introduction to Geometric Sequences
-680,The Nth Term of a Geometric Sequence
-681,Surface Areas of Cubes
-684,Convergence of Geometric Series
-685,Determining Indexes of Terms in Geometric Sequences
-686,Writing an Infinite Geometric Series in Sigma Notation
-688,Modeling Downwards Vertical Motion
-690,Sums of Finite Geometric Series Given in Sigma Notation
-691,Finding the Sum of an Infinite Geometric Series
-692,The Sum of the First N Terms of a Geometric Series
-696,Extending Polynomial Identities to the Complex Numbers
-698,Solving Rational Equations Using Cross-Multiplication
-703,Permutations
-704,The Axis of Symmetry of a Parabola
-705,Combinations
-708,Advanced Rational Equations
-709,Single Events in Probability
-711,The Z-Score
-715,The Multiplication Law for Conditional Probability
-724,The Fundamental Theorem of Algebra for Quadratic Equations
-725,Even and Odd Functions
-726,The Common Logarithm
-727,Solving Cubic Equations by Grouping
-728,Dividing Polynomials Using Synthetic Division
-729,Vieta's Formulas
-730,Expected Values of Discrete Random Variables
-733,Equations of Hyperbolas Centered at a General Point
-734,Linear Correlation
-735,Complex Numbers
-736,Selecting a Regression Model
-740,The Addition Law of Probability
-742,Introduction to the Elimination Method
-752,Using Differentiation to Calculate Critical Points
-753,Introduction to Inverse Functions
-754,The Range of a Function
-755,Finding Lowest Common Multiples Using Prime Factorization
-756,Graphs of Inverse Functions
-757,The Rational Roots Theorem
-758,Improper Integrals
-759,Improper Integrals of the Second Kind
-760,The Arc Length of a Planar Curve
-762,Calculating Velocity Using Integration
-763,Calculating Velocity for Plane Motion Using Differentiation
-764,Introduction to Radians
-765,Special Trigonometric Ratios
-766,The Triangle Inequality
-773,The Law of Total Probability
-774,Factorials
-775,Ordering Objects
-776,Combining Graph Transformations of Secant and Cosecant
-778,Properties of Transformed Secant and Cosecant Functions
-779,Expressing an Arithmetic Series in Sigma Notation
-784,Horizontal Stretches of Trigonometric Functions
-788,Modeling With the Normal Distribution
-790,Absolute Value Graphs
-793,Venn Diagrams in Probability
-794,Computing Probabilities for Compound Events Using Venn Diagrams
-798,Differentiating Parametric Curves
-799,Calculating Tangent and Normal Lines with Parametric Equations
-802,The Domain of a Function
-803,Graphing Curves Defined Parametrically
-806,Parametric Equations of Circles
-807,Vertical Asymptotes of Rational Functions
-808,Horizontal Asymptotes of Rational Functions
-811,Finding Greatest Common Factors Using Prime Factorization
-812,Defining the Derivative Using Derivative Notation
-813,Introduction to Quadratic Equations
-814,The Vertex Form of a Parabola
-817,Vertical Translations of Exponential Growth Functions
-818,The Natural Logarithm
-824,Calculating Acceleration for Straight-Line Motion Using Differentiation
-825,Calculating Acceleration for Plane Motion Using Differentiation
-826,Finding Velocity Vectors in Two Dimensions Using Integration
-829,Prime Factors
-831,The Double-Angle Formula for Cosine
-837,Parallel Lines in the Coordinate Plane
-839,Equations of Lines in Standard Form
-840,Prime and Composite Numbers
-842,Equations of Circles Centered at the Origin
-843,Equations of Circles
-844,Calculating Circle Intercepts
-845,Intersections of Circles with Lines
-846,The Factor Theorem
-847,The Remainder Theorem
-848,Equations of Ellipses Centered at the Origin
-849,Equations of Ellipses Centered at a General Point
-850,Finding Intercepts of Ellipses
-852,Finding the Center and Axes of Ellipses by Completing the Square
-853,Introduction to Ellipses
-861,Introduction to Matrices
-862,"Zero, Square, Diagonal and Identity Matrices"
-863,Introduction to the Inverse of a Matrix
-864,Inverses of 2x2 Matrices
-865,Introduction to Linear Transformations
-866,Linear Transformations of Objects in the Plane
-867,Dilations and Reflections as Linear Transformations
-870,Solving Equations Containing the Exponential Function
-871,Equations of Hyperbolas Centered at the Origin
-872,Asymptotes of Hyperbolas Centered at the Origin
-873,Parametric Equations of Horizontal Hyperbolas
-874,Finding Intercepts and Intersections of Hyperbolas
-875,Parametric Equations of Parabolas
-884,Recognizing Standard Maclaurin Series
-885,Representing Functions as Power Series
-892,The Complex Conjugate
-893,The Argument of a Complex Number
-894,The Polar Form of a Complex Number
-895,Solving Quadratic Equations With Complex Roots
-896,The Fundamental Theorem of Algebra with Cubic Equations
-897,The Fundamental Theorem of Algebra with Quartic Equations
-898,Euler's Formula
-905,Special Properties of the Complex Conjugate
-913,Elementary Trigonometric Equations Containing Sine
-914,Elementary Trigonometric Equations Containing Cosine
-915,Elementary Trigonometric Equations Containing Tangent
-923,Trigonometric Equations Containing Transformed Tangent Functions
-925,De Moivre's Theorem
-931,Right-Angle Rotations as Linear Transformations
-932,Rotations as Linear Transformations
-933,Combining Linear Transformations Using 2x2 Matrices
-934,Solving 2x2 Systems of Equations Using Inverse Matrices
-935,Introduction to Polar Coordinates
-936,Converting from Polar Coordinates to Cartesian Coordinates
-937,Polar Equations of Circles Centered at the Origin
-942,Closure Properties of Polynomials
-945,Approximating Areas With the Trapezoidal Rule
-947,Solving Trigonometric Equations Using the Sin-Cos-Tan Identity
-981,Infinite Series and Partial Sums
-982,Convergent and Divergent Infinite Series
-983,Properties of Infinite Series
-986,Calculating the Equation of a Tangent Line Using Differentiation
-987,Calculating the Equation of a Normal Line Using Differentiation
-988,Inverting Linear Transformations
-989,Area Scale Factors of Linear Transformations
-992,Estimating Derivatives Using a Forward Difference Quotient
-993,Estimating Derivatives Using a Backward Difference Quotient
-997,The Arc Length of a Parametric Curve
-998,Differentiating Curves Given in Polar Form
-999,The Arc Length of a Polar Curve
-1000,Finding the Area of a Polar Region
-1004,Solving Inequalities Involving Geometric Sequences
-1007,The Chain Rule With Exponential Functions
-1016,The Sum of a Finite Geometric Series
-1017,Writing Geometric Series in Sigma Notation
-1020,Sums of Infinite Geometric Series Given in Sigma Notation
-1023,Solving Systems of Equations Using Inverse Matrices
-1024,Solving Problems Using the Four Operations on Rational Numbers
-1029,Asymptotes of Hyperbolas Centered at a General Point
-1036,The Chain Rule With Logarithmic Functions
-1037,Integration Using the Pythagorean Identities
-1038,Integration Using the Double-Angle Formulas
-1040,The Area Bounded by a Curve and the X-Axis
-1041,The Area Bounded by a Curve and the Y-Axis
-1042,Left and Right Riemann Sums in Sigma Notation
-1044,Introduction to Related Rates
-1045,Systems of Linear Equations With Fractional Coefficients
-1046,Points of Inflection
-1056,The Linear Correlation Coefficient
-1057,Linear Regression
-1060,Expressing Rational Functions as Sums of Partial Fractions
-1061,Solving First-Order ODEs Using Direct Integration
-1062,Expressing Rational Functions with Repeated Factors as Sums of Partial Fractions
-1063,Expressing Rational Functions with Irreducible Quadratic Factors as Sums of Partial Fractions
-1076,Writing Sums of Trigonometric Functions in Amplitude-Phase Form
-1081,Systems of Linear Equations With Decimal Coefficients
-1085,Integrating Vector-Valued Functions
-1086,Defining Definite Integrals Using Left and Right Riemann Sums
-1087,Limits of Sequences
-1088,Convergence of Geometric Sequences
-1100,The Triangle Law for the Addition of Two Vectors
-1101,The Magnitude of a Vector
-1102,Problem Solving Using Vector Diagrams
-1103,Parallel Vectors
-1104,Unit Vectors
-1105,Linear Combinations of Vectors and Their Properties
-1106,Describing the Position Vector of a Point Using Known Vectors
-1107,Introduction to Vectors
-1108,The Chain Rule for Differentiation
-1109,The Product Rule for Differentiation
-1110,The Quotient Rule for Differentiation
-1112,Integrating Exponential Functions Using Linear Substitution
-1114,Differentiating Exponential Functions
-1115,Selecting Procedures for Calculating Derivatives
-1116,Differentiating Logarithmic Functions
-1117,Calculating Derivatives From Graphs
-1120,The Complement of an Event
-1121,Sample Spaces and Events in Probability
-1124,Left and Right Opening Parabolas
-1125,Upward and Downward Opening Parabolas
-1128,The Vertex of a Parabola
-1131,Solving Problems Using Addition and Subtraction of Rational Numbers
-1132,Calculating Intercepts of Parabolas
-1140,Using Integration by Parts to Calculate Integrals With Logarithms
-1144,Volumes of Cylinders
-1146,Volumes of Spheres
-1150,Vertical Reflections of Functions
-1153,Exponential Functions
-1154,Mutually Exclusive Events
-1156,Expanding a Binomial Using Binomial Coefficients
-1157,Expanding Binomials Using Pascal's Triangle
-1158,Approximating Values Using the Binomial Theorem
-1159,Calculating Definite Integrals Using Substitution
-1161,Integrating Logarithmic Functions Using Substitution
-1165,Two-Dimensional Vectors Expressed in Component Form
-1166,Three-Dimensional Vectors in Component Form
-1167,Index Notation for Matrices
-1168,Properties of Matrix Addition
-1169,The Geometric Interpretation of the 2x2 Determinant
-1171,Multiplying a Matrix by the Identity Matrix
-1177,Second-Degree Taylor Polynomials
-1179,Solving First-Order IVPs Using Separation of Variables
-1181,Verifying Solutions of Differential Equations
-1183,Circles in the Coordinate Plane
-1195,Multiplying a Matrix by a Column Vector
-1196,Multiplying Matrices
-1198,Conformability for Matrix Multiplication
-1200,Calculating the Definite Integral of a Function Given Its Graph
-1203,The Average Value of a Function
-1208,The Average Rate of Change of a Function over a Varying Interval
-1211,Solving Optimization Problems Using Derivatives
-1216,Optimizing Distances
-1222,Third-Degree Taylor Polynomials
-1223,The Quotient Rule for Exponents
-1224,The Power Rule for Exponents
-1226,Recursive Sequences
-1240,Equations of Lines in Slope-Intercept Form
-1244,Stretches of Absolute Value Graphs
-1245,Determining Limits of Sequences Using Relative Magnitudes
-1246,The Product and Quotient Rules for Limits
-1249,Calculating Derivatives From Data and Tables
-1251,Vertical Translations of Functions
-1252,Vertical Stretches of Functions
-1254,Combining Graph Transformations: Two Operations
-1255,Cartesian Equations of Parametric Curves
-1257,Finding Intersections of Parametric Curves and Lines
-1258,General Solutions of Elementary Trigonometric Equations
-1259,General Solutions of Trigonometric Equations With Transformed Functions
-1262,Limits of Piecewise Functions
-1263,Limits at Infinity of Polynomials
-1275,The Area of a General Triangle
-1277,Calculating the Magnitude of Cartesian Vectors in 3D
-1278,The Angle Between Two Vectors
-1281,Approximating Areas With the Right Riemann Sum
-1285,Calculating a Scalar Projection
-1286,The Scalar Triple Product
-1287,Volumes of Parallelepipeds
-1289,The Power of Quotient Rule for Exponents
-1290,Probability Mass Functions of Discrete Random Variables
-1295,Calculating a Vector Projection
-1297,Equivalent Expressions With Fractions
-1299,Finding Areas Using the Cross Product
-1317,Polygons
-1318,Rationalizing Denominators
-1319,Interior Angles of Polygons
-1321,Exterior Angles of Polygons
-1322,Regular Polygons
-1331,The Power of Product Rule With Algebraic Expressions
-1346,Finding the Nth Term of an Arithmetic Sequence Given Two Terms
-1351,Singular Linear Transformations in the Plane
-1352,Areas of Rectangles and Squares
-1353,Areas of Trapezoids
-1358,Shear and Stretch as Linear Transformations
-1359,Determining Intervals on Which a Function Is Increasing or Decreasing
-1360,Using the First Derivative Test to Classify Local Extrema
-1361,Integrating the Reciprocal Function
-1363,Combining Stretches of Geometric Figures
-1377,Limits of Logarithmic Functions
-1378,"Points, Lines, Rays, and Segments"
-1379,Measures of Segments
-1382,Improper Integrals Over the Real Line
-1386,The Perimeter of a Polygon
-1395,Modeling With the Binomial Distribution
-1397,Areas of Triangles
-1403,The Isosceles Triangle Theorem
-1404,Circles
-1412,Solving Linear Equations by Trial and Error
-1413,Solving Linear Equations Using Cross-Multiplication
-1414,Linear Equations With Infinitely Many Solutions
-1415,Solving Rational Equations Containing One Fractional Term
-1417,Combining the Rules of Exponents With Algebraic Expressions
-1422,Solving Quadratic Equations with Leading Coefficients by Factoring
-1423,Solving Perfect Square Quadratic Equations
-1424,The Zero Product Rule for Solving Quadratic Equations
-1425,Perfect Square Quadratic Equations with One or No Solutions
-1427,Perpendicular Lines in the Coordinate Plane
-1428,The Power of Quotient Rule With Algebraic Expressions
-1429,The Discriminant of a Quadratic Function
-1432,Finding the Area Between a Curve and the X-Axis When They Intersect
-1437,Solving Problems With Angles
-1451,The Average of the Roots Formula
-1453,Using the Pythagorean Identity in the First Quadrant
-1454,Simplifying Expressions Using the Secant-Tangent Identity
-1455,Simplifying Trigonometric Expressions Using the Cotangent-Cosecant Identity
-1456,Calculating Reference Angles
-1457,Combining the Rules of Exponents
-1458,Exterior Angles of Triangles
-1459,Classifying Quadrilaterals
-1461,Properties of Rectangles and Squares
-1462,Congruent Segments
-1463,Midpoints
-1467,Volumes of Cubes
-1468,Areas and Perimeters of Composite Shapes
-1470,Mean and Variance of the Normal Distribution
-1472,Inverses of Exponential and Logarithmic Functions
-1473,The Product Rule for Logarithms
-1474,The Quotient Rule for Logarithms
-1475,The Power Rule for Logarithms
-1482,Solving Exponential Equations Using Logarithms
-1483,Graphing the Inverse Sine Function
-1486,Graphing the Inverse Cosine Function
-1487,Graphing the Inverse Tangent Function
-1491,Graphing Sine and Cosine
-1493,Graphing Tangent and Cotangent
-1495,Solving Elementary Quadratic Inequalities
-1499,Creating Exponential Growth Expressions
-1500,Collinear Points
-1505,Sums of Angles
-1507,Vertical Angles
-1508,Angle Bisectors
-1509,"Right, Straight, Full, and Null Angles"
-1510,"Acute, Obtuse, and Reflex Angles"
-1511,Supplementary Angles
-1515,Congruent Polygons
-1516,Translations of Geometric Figures
-1517,Rotations of Geometric Figures
-1518,Reflections of Geometric Figures in the Cartesian Plane
-1530,Graphing Exponential Growth Functions
-1531,Graphing Exponential Decay Functions
-1532,Graphing Logarithmic Functions
-1535,Systems of Linear Inequalities
-1540,Graph Transformations of Square Root Functions
-1551,Solving Logarithmic Equations Containing the Natural Logarithm
-1565,Elementary Trigonometric Equations Containing Secant
-1566,Elementary Trigonometric Equations Containing Cosecant
-1567,Elementary Trigonometric Equations Containing Cotangent
-1573,Graphing Secant and Cosecant
-1576,Compound OR Inequalities
-1583,Solving Exponential Equations With Different Bases
-1584,Horizontal Translations of Functions
-1585,Horizontal Reflections of Functions
-1586,Horizontal Stretches of Functions
-1587,Solving Equations With Even Exponents Using the Nth Root Method
-1588,Analyzing and Interpreting Graphs of Linear Equations
-1589,Distance-Time Graphs
-1590,Calculating Distance From a Speed-Time Graph
-1594,Solving Logarithmic Equations Using the Laws of Logarithms
-1597,Angles and Sides in Right Triangles
-1599,Simplifying Logarithmic Expressions
-1600,The Domain of a Transformed Radical Function
-1601,Classifying Triangles
-1608,Calculating Areas of Right Triangles Using Trigonometry
-1609,Properties of Transformed Exponential Functions
-1610,Properties of Transformed Logarithmic Functions
-1628,Increasing and Decreasing Functions
-1629,Interpreting Exponential Decay
-1632,Variance and Standard Deviation
-1634,The Mean of a Data Set
-1639,Complementary Angles
-1643,Solving Logarithmic Equations With Logarithms on Both Sides
-1644,Heights of Triangles
-1647,The Complex Conjugate and the Roots of a Quadratic Equation
-1653,Graphing Elementary Cubic Functions
-1654,Graphing Cubic Curves Containing Three Distinct Real Roots
-1656,Graphing Cubic Curves Containing a Double Root
-1659,Horizontal Translations of Trigonometric Functions
-1661,Vertical Stretches of Trigonometric Functions
-1676,Simplifying Rational Expressions Using Polynomial Factorization
-1682,Vertical Reflections of Exponential Functions
-1685,The Sum and Constant Multiple Rules for Definite Integrals
-1686,Differentiating Reciprocal Trigonometric Functions
-1691,Continuity and Differentiability of Functions
-1707,Combining Graph Transformations of Logarithmic Functions
-1716,"Limits of Power Functions, and the Constant Rule for Limits"
-1717,Limits of Exponential Functions
-1719,Limits of Trigonometric Functions
-1721,Differentiating Inverse Reciprocal Trigonometric Functions
-1724,Properties of Matrix Multiplication
-1725,Powers of Matrices
-1729,Representing 2x2 Systems of Equations Using a Matrix Product
-1745,Areas of Circles
-1753,Volumes of Rectangular Solids
-1762,Surface Areas of Cylinders
-1765,Surface Areas of Spheres
-1783,Simplifying Polynomials
-1784,Calculating dy/dx Using dx/dy
-1785,Differentiating Inverse Functions
-1813,Calculating Limits of Rational Functions by Factoring
-1814,Infinite Limits from Graphs
-1815,Vertical Asymptotes of Rational Functions
-1818,The Recursive Formula for a Geometric Sequence
-1819,The Cube Root of a Perfect Cube
-1822,The Square Root of a Perfect Square
-1826,The Five Platonic Solids
-1843,The Normal Distribution
-1844,Further Extensions of the Special Trigonometric Ratios
-1848,Angles in the Coordinate Plane
-1873,Limits at Infinity from Graphs
-1875,Properties of Transformed Square Root Functions
-1882,Domain and Range of Quadratic Functions
-1884,Domain and Range of Absolute Value Functions
-1886,One-To-One Functions
-1888,Global Extrema of Functions
-1889,Invertible Functions
-1903,Limits at Infinity and Horizontal Asymptotes of Rational Functions
-1905,Limits of Reciprocal Functions
-1914,The Sum Rule for Limits
-1927,The Product Rule for Radicals
-1958,Limits of Reciprocal Trigonometric Functions
-1959,The Standard Matrix of a Linear Transformation
-1985,Function Composition
-1986,Limits of Radical Functions
-1987,Evaluating Expressions With Integer Exponents
-2006,Continuity of Functions
-2012,The Power of Product Rule for Exponents
-2013,Dividing Polynomials by Linear Binomials Using Long Division
-2021,Extending the Pythagorean Identity to All Quadrants
-2022,The Roots of a Function
-2023,Modeling With First-Order ODEs
-2024,Cumulative Distribution Functions for Discrete Random Variables
-2033,Graphing Reciprocal Functions
-2034,Sums and Products of Rational and Irrational Numbers
-2036,Velocity and Acceleration for Plane Motion
-2038,Graphing the Square Root Function
-2046,Unbounded Behavior of Functions Near a Point
-2048,End Behavior of Functions
-2049,Graphing General Polynomials
-2050,End Behavior of Polynomials
-2062,Properties of Transformed Sine and Cosine Functions
-2064,Properties of Transformed Tangent and Cotangent Functions
-2076,Solving Two-Variable Nonlinear Inequalities
-2082,Domain and Range of Transformed Reciprocal Functions
-2084,Graphing Cubic Curves Containing One Distinct Real Root
-2119,Factoring Cubic Polynomials Using the Factor Theorem
-2147,Solving Polynomial Inequalities Using a Graphical Method
-2148,Periodic Functions
-2150,The Intermediate Value Theorem
-2162,Solving Polynomial Inequalities Using the Sign Table Method
-2172,Angles and Measures of Angles
-2173,Polar Equations of Radial Lines
-2174,Squaring Rational Numbers
 2181,The Greatest Common Factor of Two Monomials
-2183,Evaluating Rational Expressions
-2184,Evaluating Algebraic Radical Expressions
-2195,Cubing Rational Numbers
-2202,Reciprocals of Rational Numbers
-2204,Surds
-2205,The Real Number System
-2213,Interpreting Linear Expressions
-2214,Translating Between Explicit and Recursive Formulas for Arithmetic Sequences
+353,Factoring Polynomials Using GCFs
+352,Factoring Perfect Square Trinomials
+382,Factoring Perfect Square Trinomials With Leading Coefficients
+370,Factoring Differences of Squares
+89,Factoring Trinomials
+3577,Factoring Trinomials Using Common Factors
+372,Factoring Trinomials With Leading Coefficients
+4951,Further Factoring Trinomials With Leading Coefficients
+422,The Quadratic Formula
+425,The Discriminant of a Quadratic Equation
+2337,Further Factoring of Polynomials Using GCFs
+660,Factoring Higher-Order Polynomials as a Difference of Squares
+428,Factoring Cubic Expressions by Grouping
+441,Factoring Sums and Differences of Cubes
+2336,Factoring Biquadratic Expressions
+846,The Factor Theorem
+2119,Factoring Cubic Polynomials Using the Factor Theorem
+104,Factoring Quartic Polynomials Using the Factor Theorem
+847,The Remainder Theorem
+757,The Rational Roots Theorem
+31,Adding and Subtracting Complex Numbers
+33,Multiplying Complex Numbers
+895,Solving Quadratic Equations With Complex Roots
+32,The Cyclic Property of the Imaginary Unit
+34,The Magnitude of a Complex Number
+893,The Argument of a Complex Number
+1060,Expressing Rational Functions as Sums of Partial Fractions
+673,Sigma Notation
+3958,Properties of Finite Series
+679,Introduction to Geometric Sequences
+1818,The Recursive Formula for a Geometric Sequence
+680,The Nth Term of a Geometric Sequence
 2215,Translating Between Explicit and Recursive Formulas for Geometric Sequences
-2216,Dilations of Geometric Figures
-2217,Stretches of Geometric Figures
-2218,Rigid Motions and Congruence
-2220,Modeling With Linear Functions
-2225,Introduction to Systems of Linear Equations
+2534,Finding the Common Ratio of a Geometric Sequence Given Two Terms
+685,Determining Indexes of Terms in Geometric Sequences
+1491,Graphing Sine and Cosine
+3540,Describing Properties of the Sine Function
+3557,Describing Properties of the Cosine Function
+206,Vertical Translations of Trigonometric Functions
+1661,Vertical Stretches of Trigonometric Functions
+1659,Horizontal Translations of Trigonometric Functions
+784,Horizontal Stretches of Trigonometric Functions
+275,Combining Graph Transformations of Sine and Cosine
+2062,Properties of Transformed Sine and Cosine Functions
+5088,Finding Zeros and Extrema of Transformed Sine and Cosine Functions
+1016,The Sum of a Finite Geometric Series
+692,The Sum of the First N Terms of a Geometric Series
+1017,Writing Geometric Series in Sigma Notation
+690,Sums of Finite Geometric Series Given in Sigma Notation
+1088,Convergence of Geometric Sequences
+691,Finding the Sum of an Infinite Geometric Series
+684,Convergence of Geometric Series
+203,Simplifying Expressions Using Basic Trigonometric Identities
+207,Simplifying Expressions Using the Pythagorean Identity
+205,Alternate Forms of the Pythagorean Identity
+1454,Simplifying Expressions Using the Secant-Tangent Identity
+3857,Alternate Forms of the Secant-Tangent Identity
+1455,Simplifying Trigonometric Expressions Using the Cotangent-Cosecant Identity
+270,The Sum and Difference Formulas for Sine
+274,The Sum and Difference Formulas for Cosine
+1076,Writing Sums of Trigonometric Functions in Amplitude-Phase Form
+271,The Double-Angle Formula for Sine
+831,The Double-Angle Formula for Cosine
+892,The Complex Conjugate
+905,Special Properties of the Complex Conjugate
+227,Dividing Complex Numbers
+894,The Polar Form of a Complex Number
+925,De Moivre's Theorem
+898,Euler's Formula
+3400,The Roots of Unity
+4050,Properties of Roots of Unity
+896,The Fundamental Theorem of Algebra with Cubic Equations
+3653,Solving Cubic Equations With Complex Roots
+897,The Fundamental Theorem of Algebra with Quartic Equations
+3657,Solving Quartic Equations With Complex Roots
+340,Maclaurin Series
+3826,Taylor Series
+885,Representing Functions as Power Series
+884,Recognizing Standard Maclaurin Series
+79,"Monomials, Binomials and Trinomials"
+85,The Greatest Common Factor of Two Linear Expressions
+87,Factoring Linear Expressions
+349,The Distributive Law for Polynomials
+360,Squaring Binomials
+2275,The Difference of Squares Formula
+813,Introduction to Quadratic Equations
+1425,Perfect Square Quadratic Equations with One or No Solutions
+381,The Cube Root of a Perfect Cube With Algebraic Expressions
+469,Determining the Roots of Polynomials
+728,Dividing Polynomials Using Synthetic Division
+394,Solving Quadratic Equations Using a Difference of Squares
+1422,Solving Quadratic Equations with Leading Coefficients by Factoring
+735,Complex Numbers
+419,Solving Quadratic Equations by Completing the Square
+464,Quadratic Equations with Purely Imaginary Solutions
+14,Imaginary Numbers
+157,The Complex Plane
+459,The Distance Formula
+1456,Calculating Reference Angles
+708,Advanced Rational Equations
+2271,Introduction to Sequences
+1226,Recursive Sequences
+1844,Further Extensions of the Special Trigonometric Ratios
+2148,Periodic Functions
+725,Even and Odd Functions
+2707,Local Extrema of Functions
+1251,Vertical Translations of Functions
+1493,Graphing Tangent and Cotangent
+1252,Vertical Stretches of Functions
+1584,Horizontal Translations of Functions
+1586,Horizontal Stretches of Functions
+1254,Combining Graph Transformations: Two Operations
+259,Graphing Reflections of Trigonometric Functions
+2048,End Behavior of Functions
+981,Infinite Series and Partial Sums
+686,Writing an Infinite Geometric Series in Sigma Notation
+2857,Solving Inequalities Involving Exponential Functions
+3838,Further Convergence of Geometric Sequences
+436,Dividing Rational Expressions
+611,The Reciprocal Trigonometric Ratios
+3739,Adding Rational Expressions With No Common Factors in the Denominator
+3766,Evaluating Trigonometric Expressions
+936,Converting from Polar Coordinates to Cartesian Coordinates
+724,The Fundamental Theorem of Algebra for Quadratic Equations
+982,Convergent and Divergent Infinite Series
+3771,Higher-Degree Taylor Polynomials
+81,Adding and Subtracting Polynomials
+811,Finding Greatest Common Factors Using Prime Factorization
+3721,Constructing Algebraic Expressions
+137,Distributing the Negative Sign in a Linear Expression
+71,The Product Rule for Exponents With Algebraic Expressions
+655,Introduction to Polynomials
+1783,Simplifying Polynomials
+3847,The Distributive Law With Three Terms
+371,Multiplying Binomials
+2012,The Power of Product Rule for Exponents
+1423,Solving Perfect Square Quadratic Equations
+376,The Square Root of a Perfect Square With Algebraic Expressions
+1819,The Cube Root of a Perfect Cube
+2022,The Roots of a Function
+435,Multiplying Rational Expressions
+1424,The Zero Product Rule for Solving Quadratic Equations
+375,Solving Quadratic Equations by Factoring
+2205,The Real Number System
+450,Completing the Square
+1318,Rationalizing Denominators
+2240,The Quotient Rule for Radicals
+433,The Pythagorean Theorem
+573,Distances Between Points in the Coordinate Plane
+1848,Angles in the Coordinate Plane
+440,Rational Equations With Three Terms
+2626,The Least Common Multiple of Two Polynomials
+802,The Domain of a Function
+3568,Trigonometric Ratios of Quadrantal Angles Outside the Standard Range
+3829,Extending the Trigonometric Ratios to Large Angles
+165,Piecewise Functions
+453,Graphing Elementary Quadratic Functions
 2226,Reflective Symmetry
 2227,Rotational Symmetry
-2229,Converting Units of Area to Smaller Units
-2230,Determining Units in Formulas
-2231,Selecting Units for Rates of Change
-2233,Converting Between Mixed Units
-2234,Degrees of Accuracy
-2240,The Quotient Rule for Radicals
-2244,Simplifying Linear Expressions Containing Fractions
-2270,Solving Linear Equations With Decimal Coefficients
-2271,Introduction to Sequences
-2273,Inverse Variation
-2274,Modeling with Direct Variation
-2275,The Difference of Squares Formula
-2278,The Segment Addition Postulate
-2281,Absolute Value
-2310,Compound Inequalities
-2314,Introduction to Exponents
-2321,Evaluating Exponents
-2327,Speed-Time Graphs
-2336,Factoring Biquadratic Expressions
-2337,Further Factoring of Polynomials Using GCFs
-2353,Adding Fractions With Unlike Denominators
-2354,Adding Mixed Numbers With Unlike Denominators
-2356,Subtracting Mixed Numbers With Unlike Denominators
-2357,Subtracting Fractions With Unlike Denominators
-2360,Multiplying Fractions by Whole Numbers
-2365,Least Common Denominators
-2369,Dividing Fractions by Whole Numbers
-2372,Subtracting Fractions With Unlike Denominators Using Models
-2374,Adding Fractions With Unlike Denominators Using Models
-2376,Comparing Fraction Models Using Common Denominators
-2377,Dividing Whole Numbers by Fractions
-2378,Multiplying Fractions
-2379,Multiplying Mixed Numbers by Whole Numbers
-2380,Multiplying Mixed Numbers by Fractions
-2381,Multiplying Mixed Numbers
-2382,Dividing Fractions
-2388,Reciprocals
-2436,Dividing Fractions by Whole Numbers Using Models
-2437,Dividing Whole Numbers by Fractions Using Models: Whole Number Results
-2438,Dividing Fractions Using Models
-2440,Least Common Multiples
-2451,Converting Between Percentages and Fractions
-2452,Converting Between Percentages and Decimals
-2453,Finding Part of a Number Given a Whole and a Percentage
-2454,Finding Part of a Number Given a Whole and a Percentage: Word Problems
-2455,Finding a Percentage Given Two Numbers
-2456,Finding a Total Given a Part and a Percentage
-2458,Strategies to Simplify Whole Number and Fraction Multiplication
-2459,Strategies to Simplify Fraction Multiplication
-2464,Solving Exponential Growth Problems
-2465,Interpreting Exponential Growth
-2466,Solving Exponential Decay Problems
-2467,Identifying Three-Dimensional Shapes
-2468,Nets of Polyhedrons
-2469,Finding Surface Areas Using Nets
-2471,Modeling Exponential Growth With Functions
-2472,Modeling Exponential Decay With Functions
-2475,Evaluating Whole Number Expressions Containing Exponents
-2476,Evaluating Exponents With Fractional Bases
-2477,Evaluating Exponents With Decimal Bases
-2484,"Faces, Vertices, and Edges of Polyhedrons"
-2534,Finding the Common Ratio of a Geometric Sequence Given Two Terms
-2552,Understanding Proportional Relationships Using Graphs
-2553,Understanding Proportional Relationships Using Tables
-2554,Understanding Proportional Relationships From Descriptions
-2558,"Natural Numbers, Integers, and Rational Numbers"
-2560,"Percentage Increase, Decrease, and Error"
-2561,Evaluating Rational Number Expressions Without Exponents
-2564,Writing Repeating Decimals as Fractions
-2585,Scatter Plots
-2607,Radicals as Fractional Exponents
-2609,Trend Lines
-2610,Limits Involving the Exponential Function
-2625,The Least Common Multiple of Two Monomials
-2626,The Least Common Multiple of Two Polynomials
-2706,Linear Transformations of Points and Lines in the Plane
-2707,Local Extrema of Functions
-2746,Parametric Equations of Ellipses
-2805,"Divisibility of Integers by 2, 5, 10, 4, and 8"
-2826,The Union of Sets
-2827,The Intersection of Sets
-2837,"Parametric Equations of Parabolas Centered at (h,k)"
-2839,Modeling With the Geometric Distribution
+3817,Describing Function Composition
+1888,Global Extrema of Functions
+3821,Graphs of Functions
+2046,Unbounded Behavior of Functions Near a Point
 2841,Combining Reflections With Other Graph Transformations
-2849,Euler's Formula for Polyhedra
-2855,Inequalities Involving Powers of Binomials
-2856,Solving Radical Inequalities
-2857,Solving Inequalities Involving Exponential Functions
-2858,Solving Inequalities Involving Logarithmic Functions
-2859,Solving Inequalities Involving Exponential Functions and Polynomials
-2883,Dividing Polynomials by Manipulating Rational Expressions
-2975,Evaluating Definite Integrals Using Symmetry
-2976,Qualitative Analysis of First-Order ODEs
-2978,Plotting X as a Function of Y
-2979,Solving Exponential Equations Using the Zero-Product Property
-2981,Parametric Equations of Vertical Hyperbolas
+97,Horizontal and Vertical Lines
+754,The Range of a Function
+675,Finding the Sum of an Arithmetic Series
+30,Combining the Laws of Logarithms
+3737,Solving Exponential Equations With Different Bases Using Logarithms
+4034,Further Solving Linear Inequalities
+1495,Solving Elementary Quadratic Inequalities
 2982,Solving Inequalities Involving Positive and Negative Factors
-3079,Multiplying Fractions Using Models
-3214,Percentage Points of the Standard Normal Distribution
-3215,Introduction to Differential Equations
-3216,"Calculating Slopes of Circles, Ellipses, and Parabolas"
-3281,The Binomial Distribution
-3284,The Geometric Distribution
-3355,Solving Rational Inequalities
-3400,The Roots of Unity
-3404,Pascal's Triangle and the Binomial Coefficients
-3530,Roots of Transformed Radical Functions
-3534,Calculating the Vertex of a Parabola by Completing the Square
-3535,Reflections of Figures Across Arbitrary Lines
-3536,Further Rules of Absolute Value
-3537,Evaluating Larger Exponents
-3540,Describing Properties of the Sine Function
-3543,"Divisibility of Integers by 3, 9, 6, and 7"
-3546,Writing the Equation of a Parabola in Vertex Form
+633,Calculating Trigonometric Ratios Using the Pythagorean Theorem
+437,Adding and Subtracting Rational Expressions
+268,Finding Trigonometric Ratios of Special Angles Using the Unit Circle
+935,Introduction to Polar Coordinates
+696,Extending Polynomial Identities to the Complex Numbers
+1647,The Complex Conjugate and the Roots of a Quadratic Equation
+1222,Third-Degree Taylor Polynomials
+4250,The Fundamental Theorem of Arithmetic
+63,Introduction to Algebraic Expressions
+267,The Product Rule for Exponents
+470,Introduction to Functions
+2607,Radicals as Fractional Exponents
+134,Collecting Like Terms in a Linear Expression
+657,The Degree of a Polynomial
+135,Applying the Distributive Law With Linear Expressions
+3873,Simplifying Linear Expressions When a Group of Terms Is Subtracted
+125,Exponents With Rational Bases
+75,Rules of Absolute Value
+1822,The Square Root of a Perfect Square
+2195,Cubing Rational Numbers
 3552,Squaring a Square Root
-3554,Congruent Angles
-3555,Solving Rational Equations Containing Binomials Using Cross-Multiplication
-3556,Finding Equations of Parallel Lines
-3557,Describing Properties of the Cosine Function
-3558,Describing Properties of the Tangent Function
-3559,Combining Transformations of Absolute Value Graphs
+1676,Simplifying Rational Expressions Using Polynomial Factorization
+2204,Surds
+2558,"Natural Numbers, Integers, and Rational Numbers"
+1927,The Product Rule for Radicals
+354,Solving Many-Variable Equations
+430,Solving Equations Using the Square Root Method
+1601,Classifying Triangles
+2184,Evaluating Algebraic Radical Expressions
+92,The Cartesian Coordinate System
+2281,Absolute Value
+610,Calculating Angles in Right Triangles Using Trigonometry
+764,Introduction to Radians
+765,Special Trigonometric Ratios
+2625,The Least Common Multiple of Two Monomials
+458,Unions of Intervals
+261,Coterminal Angles
+269,Finding Trigonometric Ratios of Quadrantal Angles
+4037,Extending the Trigonometric Ratios Using Angles in Radians
+418,Equations of Lines in Point-Slope Form
+3535,Reflections of Figures Across Arbitrary Lines
+1517,Rotations of Geometric Figures
+1985,Function Composition
+631,Visual Representations of Functions
+1628,Increasing and Decreasing Functions
+634,Combining Graph Transformations: Three or More Operations
+1150,Vertical Reflections of Functions
+1585,Horizontal Reflections of Functions
+95,Graphing Linear Equations
+779,Expressing an Arithmetic Series in Sigma Notation
+1474,The Quotient Rule for Logarithms
+1475,The Power Rule for Logarithms
+1473,The Product Rule for Logarithms
+1583,Solving Exponential Equations With Different Bases
+1413,Solving Linear Equations Using Cross-Multiplication
+4031,Representing Solutions to Inequalities on Number Lines
+451,Absolute Value Inequalities
+661,Roots of Quadratic Functions
+350,Compound AND Inequalities
+1609,Properties of Transformed Exponential Functions
+1610,Properties of Transformed Logarithmic Functions
+609,The Trigonometric Ratios
+423,Simplifying Rational Expressions by Factoring
+3825,Analyzing Second-Degree Taylor Polynomials
+829,Prime Factors
+2321,Evaluating Exponents
 3561,Negative Exponents
-3562,Finding Equations of Perpendicular Lines
-3563,Describing Properties of the Secant Function
-3565,"Arcs, Segments, and Sectors of Circles"
-3566,Describing Properties of the Cotangent Function
-3567,Describing Properties of the Cosecant Function
-3568,Trigonometric Ratios of Quadrantal Angles Outside the Standard Range
-3571,The Extreme Value Theorem
-3575,Applying the Fundamental Theorem of Calculus to Exponential and Trigonometric Functions
-3576,Calculating the Displacement of a Particle Using Integration
-3577,Factoring Trinomials Using Common Factors
-3581,Determining Characteristics of Moving Objects Using Differentiation
-3582,Determining Characteristics of Moving Objects Using Integration
-3591,Covariance
-3593,Speed as a Unit Rate
-3595,Residuals and Residual Plots
-3653,Solving Cubic Equations With Complex Roots
-3657,Solving Quartic Equations With Complex Roots
-3664,Modeling With Inverse Variation
-3668,Euler's Method: Calculating Multiple Steps
+64,Evaluating Linear Expressions
+589,Evaluating Numerical Expressions Containing Radicals
+1224,The Power Rule for Exponents
+3709,Simplifying Expressions With Surds
+329,Adding a Positive Number to a Negative Number
+644,Identifying Like Terms in a Linear Expression
+645,Identifying Coefficients and Constants in Linear Expressions
+328,Adding a Negative Number
+3718,Multiplying Negative Numbers
+138,Simplifying Linear Expressions Using the Distributive Law
+96,Absolute Value Expressions
+178,Inequalities
+2174,Squaring Rational Numbers
+3752,Solving Linear Equations With Unknown Coefficients by Factoring
+4029,Further Absolute Value Equations
+496,Interior Angles of Triangles
+1462,Congruent Segments
+753,Introduction to Inverse Functions
+460,The Circumference of a Circle
+3980,Measuring Angles Using a Protractor
+755,Finding Lowest Common Multiples Using Prime Factorization
+4028,Unbounded Intervals
+167,Negative Angles in the Coordinate Plane
+204,Extending the Trigonometric Ratios Using the Unit Circle
+1240,Equations of Lines in Slope-Intercept Form
+1518,Reflections of Geometric Figures in the Cartesian Plane
+1516,Translations of Geometric Figures
+6219,Constructing Linear Functions
+94,Two-Variable Linear Equations and Their Solutions
+672,Determining Indexes of Terms in Arithmetic Sequences
+1599,Simplifying Logarithmic Expressions
+870,Solving Equations Containing the Exponential Function
+651,Solving Linear Equations by Clearing a Rational Expression
+4021,Solving Two-Step Inequalities
+1576,Compound OR Inequalities
+84,Graphs of General Quadratic Functions
+393,Solving Quadratic Equations with No Constant Term
+347,Intersections of Intervals
+388,Solving Compound Inequalities
+6351,Combining Graph Transformations of Exponential Functions
+1551,Solving Logarithmic Equations Containing the Natural Logarithm
+1707,Combining Graph Transformations of Logarithmic Functions
+1597,Angles and Sides in Right Triangles
+68,Simplifying Rational Expressions
+1177,Second-Degree Taylor Polynomials
+3846,Relating Concavity to the Second Derivative
+840,Prime and Composite Numbers
+3543,"Divisibility of Integers by 3, 9, 6, and 7"
+2314,Introduction to Exponents
+652,Powers of Negative One
+2561,Evaluating Rational Number Expressions Without Exponents
+1987,Evaluating Expressions With Integer Exponents
 3679,Subtracting a Positive Fraction From a Smaller Fraction
 3680,Subtracting a Positive Decimal From a Smaller Decimal
-3683,The Domain and Range of Transformed Functions
-3684,Further Solving of Two-Variable Nonlinear Inequalities
-3695,Recursive Formulas for Arithmetic Sequences
-3709,Simplifying Expressions With Surds
-3710,Factorials in Variable Expressions
-3718,Multiplying Negative Numbers
-3719,Dividing With Negative Decimals and Fractions
-3720,Subtracting a Positive Number From a Negative Number
-3721,Constructing Algebraic Expressions
-3725,Properties of Lines Given in Standard Form
-3728,The Range of a Function: Advanced Cases
-3729,The Square Root of a Perfect Square With Domain Restrictions
-3734,Domain and Range of Inverse Functions
-3735,Graph Transformations of Reciprocal Functions
-3737,Solving Exponential Equations With Different Bases Using Logarithms
-3738,Determining Polynomial Coefficients Using the Factor Theorem
-3739,Adding Rational Expressions With No Common Factors in the Denominator
-3741,The Range of a Transformed Radical Function
-3746,More on Equivalent Ratios
+643,Identifying Terms in Linear Expressions
+2357,Subtracting Fractions With Unlike Denominators
+298,Multiplying Positive Numbers With Negative Numbers
+2378,Multiplying Fractions
 3747,Solving Linear Equations With Unknown Coefficients
-3748,Solving Equations With Odd Exponents Using the Nth Root Method
-3752,Solving Linear Equations With Unknown Coefficients by Factoring
-3753,Making Predictions Using Trend Lines
-3754,Finding a Percentage Given Two Numbers: Word Problems
-3756,Adding and Subtracting Radical Expressions
-3762,Multiplying Mixed Numbers: Word Problems
-3764,The Special Case of the Binomial Theorem
-3765,Further Modeling With Linear Equations in Two Variables
-3766,Evaluating Trigonometric Expressions
-3767,Calculating Displacement for Plane Motion
-3769,The Sum Rule for Indefinite Integrals
-3770,Integrating Exponential Functions Using Substitution
-3771,Higher-Degree Taylor Polynomials
-3811,Limits of Inverse Trigonometric Functions
-3817,Describing Function Composition
-3821,Graphs of Functions
-3822,Further Graphing of Two-Variable Linear Inequalities
-3823,Rotating Objects in the Coordinate Plane Using Functions
-3824,Completing the Square With Leading Coefficients
-3825,Analyzing Second-Degree Taylor Polynomials
-3826,Taylor Series
-3827,Graphing Non-Strict Two-Variable Linear Inequalities
-3829,Extending the Trigonometric Ratios to Large Angles
-3830,Inverses of Quadratic Functions
-3832,Solving Logarithmic Equations by Combining the Laws of Logarithms
-3833,Solving Quadratic Inequalities Using the Graphical Method
-3838,Further Convergence of Geometric Sequences
-3842,Completing the Square With Odd Linear Terms
-3845,Constructing Functions Using Transformations
-3846,Relating Concavity to the Second Derivative
-3847,The Distributive Law With Three Terms
-3848,Combining Radical Expressions Using the Product Rule
-3849,Solving Quadratic Equations With Leading Coefficients by Completing the Square
-3850,Combining Graph Transformations of Tangent and Cotangent
-3854,Further Differentiation of Curves Given in Polar Form
-3857,Alternate Forms of the Secant-Tangent Identity
-3868,Unit Conversions Using Base Units of Mass
-3869,Unit Conversions Using Base Units of Length
-3870,Unit Conversions Using Units of Time
-3871,Two-Step Unit Conversions
+384,Absolute Value Equations
+343,Solving Linear Equations With Variables on Both Sides
+1379,Measures of Segments
+1509,"Right, Straight, Full, and Null Angles"
+3554,Congruent Angles
+1404,Circles
+2234,Degrees of Accuracy
+2172,Angles and Measures of Angles
+239,Interval Notation
+112,Properties of the Unit Circle in the First Quadrant
+356,Solving Two-Variable Equations
+396,Calculating Slopes of Straight Lines
+1317,Polygons
+2220,Modeling With Linear Functions
+66,Solving Two-Step Equations
+1346,Finding the Nth Term of an Arithmetic Sequence Given Two Terms
+2214,Translating Between Explicit and Recursive Formulas for Arithmetic Sequences
+726,The Common Logarithm
+818,The Natural Logarithm
+1482,Solving Exponential Equations Using Logarithms
+38,Solving One-Step Linear Inequalities
+117,Vertical Reflections of Quadratic Functions
+1682,Vertical Reflections of Exponential Functions
+226,Solving Logarithmic Equations
+1532,Graphing Logarithmic Functions
+1297,Equivalent Expressions With Fractions
+2183,Evaluating Rational Expressions
+621,Approximating Functions Using Local Linearity and Linearization
+363,Intervals of Concavity
+2805,"Divisibility of Integers by 2, 5, 10, 4, and 8"
+322,The Zeroth Power
+2202,Reciprocals of Rational Numbers
+297,Subtracting a Negative Number
+299,Multiplying and Dividing With Zero
+3719,Dividing With Negative Decimals and Fractions
+121,Evaluating Expressions With Positive Integer Exponents
+327,Subtracting a Positive Number From a Smaller Positive Number
+525,Subtracting Mixed Numbers With Unlike Denominators Using Improper Fractions
+3720,Subtracting a Positive Number From a Negative Number
+545,Subtracting Fractions and Whole Numbers
+2353,Adding Fractions With Unlike Denominators
+2372,Subtracting Fractions With Unlike Denominators Using Models
+2360,Multiplying Fractions by Whole Numbers
+3079,Multiplying Fractions Using Models
+67,Solving Linear Equations With Fractional Coefficients
+2270,Solving Linear Equations With Decimal Coefficients
+236,Units of Length
+1378,"Points, Lines, Rays, and Segments"
+1505,Sums of Angles
+2278,The Segment Addition Postulate
+2310,Compound Inequalities
 3872,Units of Area and Volume
-3873,Simplifying Linear Expressions When a Group of Terms Is Subtracted
-3943,Inverses of Radical Functions
-3944,Inverses of Reciprocal Functions
-3958,Properties of Finite Series
-3968,Multiplying Fractions by Whole Numbers Using Models
-3979,Parallel and Perpendicular Lines
-3980,Measuring Angles Using a Protractor
-3990,Converting Units of Area to Larger Units
-4004,Improper Integrals Involving Exponential Functions
-4005,Improper Integrals Involving Arctangent
-4019,Alternate Angles
-4021,Solving Two-Step Inequalities
-4026,Solving Systems of Linear Equations Using Elimination: One Transformation
-4028,Unbounded Intervals
-4029,Further Absolute Value Equations
-4031,Representing Solutions to Inequalities on Number Lines
-4034,Further Solving Linear Inequalities
-4037,Extending the Trigonometric Ratios Using Angles in Radians
-4050,Properties of Roots of Unity
-4052,Further Properties of Infinite Series
-4059,Related Rates With Implicit Functions
-4104,Consecutive Angles
+516,Trigonometric Ratios With Radians
+557,Unit Rates
+3765,Further Modeling With Linear Equations in Two Variables
+40,Solving One-Step Multiplication and Division Equations
+65,Solving One-Step Addition and Subtraction Equations
+668,The Nth Term of an Arithmetic Sequence
+669,Finding the Common Difference of an Arithmetic Sequence
+3695,Recursive Formulas for Arithmetic Sequences
+378,Evaluating Logarithms
+28,The Change of Base Formula for Logarithms
+387,Verifying Solutions of Linear Inequalities
+456,Vertical Translations of Exponential Decay Functions
+3734,Domain and Range of Inverse Functions
+1359,Determining Intervals on Which a Function Is Increasing or Decreasing
+2382,Dividing Fractions
 4136,Equivalent Fractions With Negative Numbers
-4139,Differentiating Vector-Valued Functions
+2475,Evaluating Whole Number Expressions Containing Exponents
+2356,Subtracting Mixed Numbers With Unlike Denominators
+4204,Comparing Fractions Using Common Denominators
+539,Adding Fractions and Whole Numbers
+544,Subtracting Fractions and Whole Numbers Using Models
+2374,Adding Fractions With Unlike Denominators Using Models
+3968,Multiplying Fractions by Whole Numbers Using Models
+565,Multiplying Fractions by Unit Fractions Using Models
+1463,Midpoints
+1500,Collinear Points
+552,Writing Ratios Using Fractions
+398,Properties of Lines Given in Slope-Intercept Form
+653,Modeling With Linear Equations in Two Variables
+1588,Analyzing and Interpreting Graphs of Linear Equations
+1412,Solving Linear Equations by Trial and Error
+524,Additive Inverses of Numbers
+667,Arithmetic Sequences
+457,Converting From Logarithmic to Exponential Form
+817,Vertical Translations of Exponential Growth Functions
+756,Graphs of Inverse Functions
+752,Using Differentiation to Calculate Critical Points
+2147,Solving Polynomial Inequalities Using a Graphical Method
+2859,Solving Inequalities Involving Exponential Functions and Polynomials
+2369,Dividing Fractions by Whole Numbers
+2377,Dividing Whole Numbers by Fractions
+2438,Dividing Fractions Using Models
+330,Dividing With Negative Numbers
+3537,Evaluating Larger Exponents
+2354,Adding Mixed Numbers With Unlike Denominators
+2376,Comparing Fraction Models Using Common Denominators
+543,Adding Fractions and Whole Numbers Using Models
+2365,Least Common Denominators
+564,Multiplying Unit Fractions by Whole Numbers Using Models
+553,Equivalent Ratios
+426,Modeling With Linear Equations
+2231,Selecting Units for Rates of Change
+379,Converting From Exponential to Logarithmic Form
+1530,Graphing Exponential Growth Functions
+313,Global vs. Local Extrema and Critical Points
+923,Trigonometric Equations Containing Transformed Tangent Functions
+3833,Solving Quadratic Inequalities Using the Graphical Method
+2855,Inequalities Involving Powers of Binomials
+530,Dividing Unit Fractions by Whole Numbers
+2436,Dividing Fractions by Whole Numbers Using Models
+533,Dividing Whole Numbers by Unit Fractions
+2388,Reciprocals
+2459,Strategies to Simplify Fraction Multiplication
+4698,Dividing Whole Numbers by Fractions Using Models: Fractional Results
+2440,Least Common Multiples
+534,Introduction to Ratios
+1024,Solving Problems Using the Four Operations on Rational Numbers
+2213,Interpreting Linear Expressions
+2230,Determining Units in Formulas
 4196,Units of Mass
 4197,Units of Time
 4198,Units of Volume
-4204,Comparing Fractions Using Common Denominators
-4218,Optimizing Distances to Curves
-4236,Solving Systems of Linear Equations Using Elimination: Two Transformations
-4250,The Fundamental Theorem of Arithmetic
-4315,Applying the Addition Law With Event Complements
-4361,Computing Probabilities of Events Containing Complements Using Venn Diagrams
-4420,Symmetry Properties of the Standard Normal Distribution
-4638,Consistency and Dependency in Linear Systems
-4698,Dividing Whole Numbers by Fractions Using Models: Fractional Results
-4858,Properties of the Cross Product
-4951,Further Factoring Trinomials With Leading Coefficients
-5088,Finding Zeros and Extrema of Transformed Sine and Cosine Functions
-5204,Sums of Squares
-5572,Linear Equations With No Solutions
-6092,Equating Polynomial Coefficients
-6185,Further Rationalizing Denominators of Algebraic Expressions
-6219,Constructing Linear Functions
-6266,Determining Unknown Parameters in Quadratic Equations With One Real Solution
-6341,Finding Intersections of Lines and Quadratic Functions
-6351,Combining Graph Transformations of Exponential Functions
+1153,Exponential Functions
+3728,The Range of a Function: Advanced Cases
+1691,Continuity and Differentiability of Functions
+1259,General Solutions of Trigonometric Equations With Transformed Functions
+468,Solving Quadratic Inequalities From Graphs
+528,Dividing Unit Fractions by Whole Numbers Using Models
+529,Dividing Whole Numbers by Unit Fractions Using Models
+2458,Strategies to Simplify Whole Number and Fraction Multiplication
+2437,Dividing Whole Numbers by Fractions Using Models: Whole Number Results
+1131,Solving Problems Using Addition and Subtraction of Rational Numbers
+3762,Multiplying Mixed Numbers: Word Problems
+2454,Finding Part of a Number Given a Whole and a Percentage: Word Problems
+323,Fractions of Fractions
+391,Solving Exponential Equations
+1289,The Power of Quotient Rule for Exponents
+2006,Continuity of Functions
+1258,General Solutions of Elementary Trigonometric Equations
+567,Multiplying Fractions: Word Problems
+2381,Multiplying Mixed Numbers
+2453,Finding Part of a Number Given a Whole and a Percentage
+1815,Vertical Asymptotes of Rational Functions
+1565,Elementary Trigonometric Equations Containing Secant
+1566,Elementary Trigonometric Equations Containing Cosecant
+1567,Elementary Trigonometric Equations Containing Cotangent
+2380,Multiplying Mixed Numbers by Fractions
+2451,Converting Between Percentages and Fractions
+2452,Converting Between Percentages and Decimals
+455,Combining Graph Transformations of Reciprocal Functions
+914,Elementary Trigonometric Equations Containing Cosine
+913,Elementary Trigonometric Equations Containing Sine
+915,Elementary Trigonometric Equations Containing Tangent
+2379,Multiplying Mixed Numbers by Whole Numbers
+562,Understanding Percentages Using Models
+3735,Graph Transformations of Reciprocal Functions
+2033,Graphing Reciprocal Functions

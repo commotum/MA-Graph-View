@@ -5,7 +5,6 @@ module-id,module-name
 1.1.4,Multiplying Fractions
 1.1.5,Dividing Fractions
 1.2.1,Ratios
-1.2.2,Proportional Relationships
 1.2.3,Working With Units
 1.2.4,Percentages
 1.3.1,Addition and Subtraction of Rational Numbers
@@ -25,10 +24,8 @@ module-id,module-name
 1.5.7,Nonlinear Equations
 1.6.1,Graphs of Linear Equations
 1.6.2,Modeling With Two-Variable Linear Equations
-1.6.3,Systems of Linear Equations
 1.7.1,Radical Expressions
 1.7.2,Rational Expressions
-1.7.3,Rational Equations
 1.8.1,Functions
 1.9.1,"Absolute Value Expressions, Equations & Inequalities"
 1.10.1,Rules of Exponents
@@ -38,18 +35,15 @@ module-id,module-name
 1.11.2,Factoring Polynomials
 1.12.1,Introduction to Geometry
 1.12.2,Angles
-1.12.3,Advanced Angles
 1.12.4,Circles
 1.13.1,Triangles
 1.13.2,Polygons
-1.13.3,Area and Perimeter
 2.1.1,Quadratic Equations
 2.1.2,Quadratic Functions
 2.2.1,Polynomials
 2.2.2,Factoring Polynomials
 2.2.3,Dividing Polynomials
 2.2.4,Polynomial Theorems
-2.2.5,Graphs of Polynomials
 2.3.1,The Number System
 2.3.2,Introduction to Complex Numbers
 2.3.3,The Complex Plane
@@ -64,50 +58,23 @@ module-id,module-name
 2.6.1,Rational Expressions
 2.6.2,Rational Equations
 2.6.3,Rational Functions
-2.6.4,Radical Expressions
-2.6.5,Radical Functions
 2.7.1,Introduction to Sequences
 2.7.2,Arithmetic Sequences
 2.7.3,Geometric Sequences
 2.8.1,Coordinate Geometry
 2.8.2,Geometric Transformations
-2.8.3,Solid Geometry
 2.9.1,Introduction to Trigonometry
-2.9.2,Trigonometry with General Triangles
 2.9.3,The Unit Circle
 2.9.4,Special Trigonometric Ratios
 2.9.5,Graphing Trigonometric Functions
 2.9.6,Properties of Trigonometric Functions
 2.9.7,Graph Transformations of Trigonometric Functions
 2.9.8,Properties of Transformed Trigonometric Functions
-2.10.1,Introduction to Vectors
-2.10.2,Vectors in 2D Cartesian Coordinates
-2.11.1,Estimating Limits from Graphs
-2.11.2,The Algebra of Limits
-2.11.3,Limits of Functions
-2.11.4,Continuity
-2.12.1,Introduction to Differentiation
-2.12.2,Derivatives of Functions and the Rules of Differentiation
-2.12.3,Differentiating Composite Functions
-2.12.4,Indefinite Integrals
-2.13.1,Analyzing Data
-2.13.2,Correlation and Regression
-2.14.1,Introduction to Probability
-2.14.2,Compound Events in Probability
-2.14.3,Combinatorics
-3.1.1,The Binomial Theorem
 3.1.2,Arithmetic Series
 3.1.3,Finite Geometric Series
 3.1.4,Infinite Series
 3.2.1,Single-Variable Inequalities
-3.2.2,Two-Variable Inequalities
-3.3.1,Parametric Equations
 3.3.2,Polar Coordinates
-3.4.1,Circles
-3.4.2,Parabolas
-3.4.3,Ellipses
-3.4.4,Hyperbolas
-3.5.1,The Inverse Trigonometric Functions
 3.5.2,Elementary Trigonometric Equations
 3.5.3,Trigonometric Identities
 3.5.4,The Sum and Difference Formulas
@@ -116,35 +83,6 @@ module-id,module-name
 3.6.3,The Fundamental Theorem of Algebra
 3.7.1,Limits
 3.7.2,Continuity
-3.8.1,Differentiating Implicit and Inverse Functions
 3.8.2,Analytical Applications of Differentiation
-3.8.3,Estimating Derivatives
 3.8.4,Taylor Series
-3.9.1,Approximating Areas with Riemann Sums
-3.9.2,Definite Integrals
-3.9.3,The Area Under a Curve
-3.9.4,Accumulation Functions
-3.9.5,Applications of Integration
-3.10.1,Integration Using Substitution
-3.10.2,Integration Using Trigonometric Identities
-3.10.3,Special Techniques for Integration
-3.10.4,Integration by Parts
 3.10.5,Integration Using Partial Fractions
-3.10.6,Improper Integrals
-3.11.1,"Displacement, Velocity, and Acceleration"
-3.11.2,The Planar Motion of a Particle
-3.11.3,Related Rates and Optimization
-3.12.1,Introduction to Differential Equations
-3.12.2,Numerical Solutions of Differential Equations
-3.13.1,Vectors in 3D Cartesian Coordinates
-3.13.2,The Dot Product
-3.13.3,The Cross Product
-3.13.4,Vector-Valued Functions
-3.14.1,Introduction to Matrices
-3.14.2,Matrix Multiplication
-3.14.3,Determinants
-3.14.4,The Inverse of a Matrix
-3.14.5,Linear Transformations
-3.15.1,Probability
-3.15.2,Discrete Random Variables
-3.15.3,The Normal Distribution
