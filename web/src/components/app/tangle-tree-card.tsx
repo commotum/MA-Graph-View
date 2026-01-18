@@ -11,16 +11,21 @@ import {
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import { selectTopicLabel } from "@/lib/graph-data";
-import { buildTangleLayout, buildTopicTangleLayout } from "@/lib/tangle-layout";
+import { buildTopicTangleLayout, buildUnlocksTangleLayout } from "@/lib/tangle-layout";
 import { cn } from "@/lib/utils";
 
 type TangleTreeCardProps = {
   graph: GraphData;
+  dataSource: GraphSource;
   selectedTopicId: number | null;
   focusTopicId?: number | null;
   depthLimit?: number;
+  title?: string;
+  description?: string;
 };
 
 const BUNDLE_PALETTE = [
@@ -33,11 +38,16 @@ const BUNDLE_PALETTE = [
 
 export function TangleTreeCard({
   graph,
+  dataSource,
   selectedTopicId,
   focusTopicId,
   depthLimit,
+  title,
+  description,
 }: TangleTreeCardProps) {
   const router = useRouter();
+  const resolvedTitle = title ?? "Tangle Tree";
+  const resolvedDescription = description ?? "Bundled edges over prerequisite layers.";
   const layout = React.useMemo(() => {
     if (graph.stats.has_cycle) {
       return null;
@@ -48,21 +58,21 @@ export function TangleTreeCard({
     if (focusTopicId !== undefined) {
       return buildTopicTangleLayout(graph, focusTopicId, depthLimit);
     }
-    return buildTangleLayout(graph);
+    return buildUnlocksTangleLayout(graph);
   }, [depthLimit, focusTopicId, graph]);
 
   const handleSelect = React.useCallback(
     (id: number) => {
-      router.push(`/?topic=${id}`);
+      router.push(buildTopicHref(id, dataSource));
     },
-    [router]
+    [dataSource, router]
   );
 
   if (graph.stats.has_cycle) {
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Tangle Tree</CardTitle>
+          <CardTitle>{resolvedTitle}</CardTitle>
           <CardDescription>
             Cycles detected - resolve cycles to render the tangle tree view.
           </CardDescription>
@@ -78,7 +88,7 @@ export function TangleTreeCard({
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Tangle Tree</CardTitle>
+          <CardTitle>{resolvedTitle}</CardTitle>
           <CardDescription>Select a topic to render its prerequisite tree.</CardDescription>
         </CardHeader>
       </Card>
@@ -89,7 +99,7 @@ export function TangleTreeCard({
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Tangle Tree</CardTitle>
+          <CardTitle>{resolvedTitle}</CardTitle>
           <CardDescription>No nodes available to render.</CardDescription>
         </CardHeader>
       </Card>
@@ -99,8 +109,8 @@ export function TangleTreeCard({
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Tangle Tree</CardTitle>
-        <CardDescription>Bundled edges over prerequisite layers.</CardDescription>
+        <CardTitle>{resolvedTitle}</CardTitle>
+        <CardDescription>{resolvedDescription}</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className="text-xs text-muted-foreground tabular-nums">

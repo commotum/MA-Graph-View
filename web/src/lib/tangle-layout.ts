@@ -223,6 +223,61 @@ export const buildTangleLayout = (
   return constructTangleLayout(levels, options);
 };
 
+const buildLevelsFromUnlocks = (
+  graph: GraphData
+): { levels: TangleLevel[]; levelsById: Record<string, number> } => {
+  const levelsById: Record<string, number> = {};
+  const layers: Array<{ level: number; topicIds: number[] } | undefined> = [];
+  const order =
+    graph.graph.topo_order.length > 0
+      ? graph.graph.topo_order.slice().reverse()
+      : graph.topics.ordered_ids.slice().reverse();
+
+  order.forEach((id) => {
+    const unlocks = graph.graph.unlocks[String(id)] ?? [];
+    let level = 0;
+    unlocks.forEach((unlock) => {
+      const unlockLevel = levelsById[String(unlock)];
+      level = Math.max(level, (unlockLevel ?? 0) + 1);
+    });
+    levelsById[String(id)] = level;
+    if (!layers[level]) {
+      layers[level] = { level, topicIds: [] };
+    }
+    layers[level]?.topicIds.push(id);
+  });
+
+  const levels: TangleLevel[] = layers
+    .filter((layer): layer is { level: number; topicIds: number[] } => Boolean(layer))
+    .map((layer) => ({
+      level: layer.level,
+      nodes: layer.topicIds.map((id) => ({
+        id,
+        level: layer.level,
+        parentIds: (graph.graph.unlocks[String(id)] ?? []).filter(
+          (parentId) => levelsById[String(parentId)] !== undefined
+        ),
+        parents: [],
+        bundleGroupsById: {},
+        bundleGroups: [],
+        x: 0,
+        y: 0,
+        height: 0,
+      })),
+      bundles: [],
+    }));
+
+  return { levels, levelsById };
+};
+
+export const buildUnlocksTangleLayout = (
+  graph: GraphData,
+  options: TangleLayoutOptions = {}
+): TangleLayout => {
+  const { levels } = buildLevelsFromUnlocks(graph);
+  return constructTangleLayout(levels, options);
+};
+
 export const buildTopicTangleLayout = (
   graph: GraphData,
   focusTopicId: number,

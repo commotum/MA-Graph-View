@@ -1,5 +1,6 @@
 import { TopicPage } from "@/components/app/topic-page";
 import { getGraph, selectTopicIdByHid } from "@/lib/graph";
+import { resolveGraphSource } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import { buildTopicSearchItems } from "@/lib/topic-search";
 
@@ -34,14 +35,16 @@ const resolveTopicId = (graph: GraphData, searchParams?: SearchParams): number |
 };
 
 export default async function Home({ searchParams }: PageProps) {
-  const graph = await getGraph();
   const resolvedSearchParams = await Promise.resolve(searchParams);
+  const dataSource = resolveGraphSource(getSearchParam(resolvedSearchParams?.dataset));
+  const graph = await getGraph(dataSource);
   const topicId = resolveTopicId(graph, resolvedSearchParams);
   const topicSearchItems = buildTopicSearchItems(graph);
 
   return (
     <TopicPage
       graph={graph}
+      dataSource={dataSource}
       selectedTopicId={topicId}
       topicSearchItems={topicSearchItems}
     />

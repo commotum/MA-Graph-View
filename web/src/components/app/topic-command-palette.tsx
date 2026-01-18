@@ -15,10 +15,12 @@ import {
 import type { TopicSearchItem } from "@/lib/topic-search";
 import { filterTopicSearchItems } from "@/lib/topic-search";
 import { cn } from "@/lib/utils";
+import { buildTopicHref, type GraphSource } from "@/lib/data-source";
 
 type TopicCommandPaletteProps = {
   items: TopicSearchItem[];
   selectedTopicId: number | null;
+  dataSource: GraphSource;
 };
 
 const RESULT_LIMIT = 60;
@@ -26,6 +28,7 @@ const RESULT_LIMIT = 60;
 export function TopicCommandPalette({
   items,
   selectedTopicId,
+  dataSource,
 }: TopicCommandPaletteProps) {
   const [open, setOpen] = React.useState(false);
   const [query, setQuery] = React.useState("");
@@ -69,11 +72,11 @@ export function TopicCommandPalette({
     (value: string) => {
       const nextId = Number(value);
       if (!Number.isNaN(nextId)) {
-        router.push(`/?topic=${nextId}`);
+        router.push(buildTopicHref(nextId, dataSource));
         setOpen(false);
       }
     },
-    [router]
+    [dataSource, router]
   );
 
   const emptyMessage = query.trim()

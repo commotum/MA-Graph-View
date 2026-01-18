@@ -16,6 +16,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import {
   selectTopicPlacementDetails,
@@ -26,6 +28,7 @@ import {
 } from "@/lib/graph-data";
 type AppSidebarProps = {
   graph: GraphData;
+  dataSource: GraphSource;
   selectedTopicId: number | null;
 };
 
@@ -34,6 +37,7 @@ const stripCoursePrefix = (value: string, courseId: string): string =>
 
 export function AppSidebar({
   graph,
+  dataSource,
   selectedTopicId,
 }: AppSidebarProps) {
   const courses = selectCourses(graph);
@@ -123,7 +127,7 @@ export function AppSidebar({
                                                 size="sm"
                                                 isActive={topic.id === selectedTopicId}
                                               >
-                                                <Link href={`/?topic=${topic.id}`}>
+                                                <Link href={buildTopicHref(topic.id, dataSource)}>
                                                   <span className="text-[11px] text-muted-foreground tabular-nums">
                                                     {topicLabel}
                                                   </span>

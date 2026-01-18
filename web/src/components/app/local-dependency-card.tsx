@@ -7,6 +7,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import type { GraphData, TopicPlacement } from "@/lib/graph-data";
 import {
   parseHid,
@@ -17,6 +19,7 @@ import { cn } from "@/lib/utils";
 
 type LocalDependencyCardProps = {
   graph: GraphData;
+  dataSource: GraphSource;
   selectedTopicId: number | null;
   title?: string;
   description?: string;
@@ -517,6 +520,7 @@ const MergedDependencyList = ({
 
 export function LocalDependencyCard({
   graph,
+  dataSource,
   selectedTopicId,
   title,
   description,
@@ -571,9 +575,9 @@ export function LocalDependencyCard({
 
   const handleSelect = React.useCallback(
     (id: number) => {
-      router.push(`/?topic=${id}`);
+      router.push(buildTopicHref(id, dataSource));
     },
-    [router]
+    [dataSource, router]
   );
 
   if (selectedTopicId === null) {

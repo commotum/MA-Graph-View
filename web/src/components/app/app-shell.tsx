@@ -4,14 +4,17 @@ import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/s
 import { PanelLeftIcon } from "lucide-react";
 import Image from "next/image";
 
+import type { GraphSource } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import { AppSidebar } from "@/components/app/app-sidebar";
 import { TopicCommandPalette } from "@/components/app/topic-command-palette";
 import type { TopicSearchItem } from "@/lib/topic-search";
+import { DataSourceToggle } from "@/components/app/data-source-toggle";
 import { ThemeToggle } from "@/components/app/theme-toggle";
 
 type AppShellProps = {
   graph: GraphData;
+  dataSource: GraphSource;
   selectedTopicId: number | null;
   topicSearchItems: TopicSearchItem[];
   headerTitle?: string;
@@ -21,6 +24,7 @@ type AppShellProps = {
 
 export function AppShell({
   graph,
+  dataSource,
   selectedTopicId,
   topicSearchItems,
   headerTitle,
@@ -35,8 +39,13 @@ export function AppShell({
       <TopicCommandPalette
         items={topicSearchItems}
         selectedTopicId={selectedTopicId}
+        dataSource={dataSource}
       />
-      <AppSidebar graph={graph} selectedTopicId={selectedTopicId} />
+      <AppSidebar
+        graph={graph}
+        dataSource={dataSource}
+        selectedTopicId={selectedTopicId}
+      />
       <SidebarInset>
         <header className="sticky top-0 z-10 flex items-center gap-3 border-b bg-background px-4 py-3">
           <SidebarTrigger className="md:hidden" />
@@ -57,7 +66,10 @@ export function AppShell({
             <div className="text-sm text-muted-foreground">{resolvedSubtitle}</div>
             <h1 className="text-lg font-semibold text-foreground">{resolvedTitle}</h1>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <DataSourceToggle dataSource={dataSource} />
+            <ThemeToggle />
+          </div>
         </header>
         <div className="flex flex-1 flex-col gap-6 px-6 py-8">{children}</div>
       </SidebarInset>

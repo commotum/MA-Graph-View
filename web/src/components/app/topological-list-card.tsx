@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import type { GraphData, TopicPlacement } from "@/lib/graph-data";
 import {
   parseHid,
@@ -20,6 +22,7 @@ import { cn } from "@/lib/utils";
 
 type TopologicalListCardProps = {
   graph: GraphData;
+  dataSource?: GraphSource;
   selectedTopicId: number | null;
 };
 
@@ -117,9 +120,11 @@ const SelectField = ({
 
 export function TopologicalListCard({
   graph,
+  dataSource,
   selectedTopicId,
 }: TopologicalListCardProps) {
   const router = useRouter();
+  const resolvedSource = dataSource ?? "default";
   const [courseId, setCourseId] = React.useState(ALL_VALUE);
   const [unitId, setUnitId] = React.useState(ALL_VALUE);
   const [moduleId, setModuleId] = React.useState(ALL_VALUE);
@@ -168,9 +173,9 @@ export function TopologicalListCard({
 
   const handleSelect = React.useCallback(
     (id: number) => {
-      router.push(`/?topic=${id}`);
+      router.push(buildTopicHref(id, resolvedSource));
     },
-    [router]
+    [resolvedSource, router]
   );
 
   if (graph.stats.has_cycle) {

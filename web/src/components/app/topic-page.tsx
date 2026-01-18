@@ -1,12 +1,14 @@
 import { AppShell } from "@/components/app/app-shell";
 import { TopicPageContent } from "@/components/app/topic-page-content";
 
+import type { GraphSource } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import { selectTopicLabel, selectTopicPlacementDetails } from "@/lib/graph-data";
 import type { TopicSearchItem } from "@/lib/topic-search";
 
 type TopicPageProps = {
   graph: GraphData;
+  dataSource: GraphSource;
   selectedTopicId: number | null;
   topicSearchItems: TopicSearchItem[];
 };
@@ -27,18 +29,28 @@ const getHeaderCopy = (
   return { title: label, subtitle: moduleName };
 };
 
-export function TopicPage({ graph, selectedTopicId, topicSearchItems }: TopicPageProps) {
+export function TopicPage({
+  graph,
+  dataSource,
+  selectedTopicId,
+  topicSearchItems,
+}: TopicPageProps) {
   const header = getHeaderCopy(graph, selectedTopicId);
 
   return (
     <AppShell
       graph={graph}
+      dataSource={dataSource}
       selectedTopicId={selectedTopicId}
       topicSearchItems={topicSearchItems}
       headerTitle={header.title}
       headerSubtitle={header.subtitle}
     >
-      <TopicPageContent graph={graph} selectedTopicId={selectedTopicId} />
+      <TopicPageContent
+        graph={graph}
+        dataSource={dataSource}
+        selectedTopicId={selectedTopicId}
+      />
     </AppShell>
   );
 }

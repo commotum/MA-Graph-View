@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import { selectTopicLabel } from "@/lib/graph-data";
 import type { TopicSearchItem } from "@/lib/topic-search";
@@ -15,6 +17,7 @@ import { filterTopicSearchItems } from "@/lib/topic-search";
 
 type PathViewsCardProps = {
   graph: GraphData;
+  dataSource?: GraphSource;
   selectedTopicId: number | null;
   topicSearchItems: TopicSearchItem[];
 };
@@ -158,10 +161,12 @@ const PathList = ({
 
 export function PathViewsCard({
   graph,
+  dataSource,
   selectedTopicId,
   topicSearchItems,
 }: PathViewsCardProps) {
   const router = useRouter();
+  const resolvedSource = dataSource ?? "default";
   const [sourceQuery, setSourceQuery] = React.useState("");
   const [sourceId, setSourceId] = React.useState<number | null>(null);
   const [drawerMode, setDrawerMode] = React.useState<DrawerMode | null>(null);
@@ -199,9 +204,9 @@ export function PathViewsCard({
 
   const handleNavigate = React.useCallback(
     (id: number) => {
-      router.push(`/?topic=${id}`);
+      router.push(buildTopicHref(id, resolvedSource));
     },
-    [router]
+    [resolvedSource, router]
   );
 
   if (selectedTopicId === null) {

@@ -4,21 +4,29 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import type { GraphData } from "./graph-data";
+import { resolveGraphSource, type GraphSource } from "./data-source";
 
-const GRAPH_PATH = path.resolve(process.cwd(), "..", "DATA", "graph.json");
+const GRAPH_PATHS: Record<GraphSource, string> = {
+  default: path.resolve(process.cwd(), "..", "DATA", "graph.json"),
+  ece: path.resolve(process.cwd(), "..", "ECE-DATA", "graph.json"),
+};
 
-let cachedGraph: GraphData | null = null;
+const cachedGraphs = new Map<GraphSource, GraphData>();
 
-const readGraphFile = async (): Promise<GraphData> => {
-  const raw = await readFile(GRAPH_PATH, "utf-8");
+const readGraphFile = async (source: GraphSource): Promise<GraphData> => {
+  const raw = await readFile(GRAPH_PATHS[source], "utf-8");
   return JSON.parse(raw) as GraphData;
 };
 
-export const getGraph = async (): Promise<GraphData> => {
-  if (!cachedGraph) {
-    cachedGraph = await readGraphFile();
+export const getGraph = async (source?: GraphSource | string | null): Promise<GraphData> => {
+  const resolvedSource = resolveGraphSource(source);
+  const cached = cachedGraphs.get(resolvedSource);
+  if (cached) {
+    return cached;
   }
-  return cachedGraph;
+  const graph = await readGraphFile(resolvedSource);
+  cachedGraphs.set(resolvedSource, graph);
+  return graph;
 };
 
 export * from "./graph-data";

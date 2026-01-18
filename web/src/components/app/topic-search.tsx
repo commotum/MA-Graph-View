@@ -12,11 +12,14 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import { filterTopicSearchItems } from "@/lib/topic-search";
 import type { TopicSearchItem } from "@/lib/topic-search";
 
 type TopicSearchProps = {
   items: TopicSearchItem[];
+  dataSource?: GraphSource;
   selectedTopicId: number | null;
 };
 
@@ -27,10 +30,11 @@ const isMacPlatform = (): boolean =>
   typeof navigator !== "undefined" &&
   /Mac|iPhone|iPad|iPod/.test(navigator.platform);
 
-export function TopicSearch({ items, selectedTopicId }: TopicSearchProps) {
+export function TopicSearch({ items, dataSource, selectedTopicId }: TopicSearchProps) {
   const [query, setQuery] = React.useState("");
   const [isMac, setIsMac] = React.useState(false);
   const router = useRouter();
+  const resolvedSource = dataSource ?? "default";
 
   React.useEffect(() => {
     setIsMac(isMacPlatform());
@@ -45,10 +49,10 @@ export function TopicSearch({ items, selectedTopicId }: TopicSearchProps) {
 
   const handleSelect = React.useCallback(
     (topicId: number) => {
-      router.push(`/?topic=${topicId}`);
+      router.push(buildTopicHref(topicId, resolvedSource));
       setQuery("");
     },
-    [router]
+    [resolvedSource, router]
   );
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -87,7 +91,10 @@ export function TopicSearch({ items, selectedTopicId }: TopicSearchProps) {
                   isActive={topic.id === selectedTopicId}
                   className="h-auto w-full flex-col items-start gap-1 py-2"
                 >
-                  <Link href={`/?topic=${topic.id}`} onClick={() => setQuery("")}>
+                  <Link
+                    href={buildTopicHref(topic.id, resolvedSource)}
+                    onClick={() => setQuery("")}
+                  >
                     <span className="text-[11px] text-muted-foreground tabular-nums">
                       ID {topic.id}
                       {topic.placements[0] ? ` - ${topic.placements[0]}` : ""}

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import os
 import heapq
 import json
 from collections import defaultdict
@@ -9,7 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = BASE_DIR / "DATA"
+DATA_DIR_ENV = os.environ.get("GRAPH_DATA_DIR")
+DATA_DIR = Path(DATA_DIR_ENV) if DATA_DIR_ENV else BASE_DIR / "DATA"
 OUTPUT_PATH = DATA_DIR / "graph.json"
 
 

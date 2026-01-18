@@ -5,20 +5,25 @@ import { useRouter } from "next/navigation";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
+import type { GraphSource } from "@/lib/data-source";
+import { buildTopicHref } from "@/lib/data-source";
 import type { GraphData } from "@/lib/graph-data";
 import { buildTopicLayers, selectTopicLabel } from "@/lib/graph-data";
 import { cn } from "@/lib/utils";
 
 type TopologicalLayersCardProps = {
   graph: GraphData;
+  dataSource?: GraphSource;
   selectedTopicId: number | null;
 };
 
 export function TopologicalLayersCard({
   graph,
+  dataSource,
   selectedTopicId,
 }: TopologicalLayersCardProps) {
   const router = useRouter();
+  const resolvedSource = dataSource ?? "default";
 
   const { layers, levelsById } = React.useMemo(() => buildTopicLayers(graph), [graph]);
   const defaultOpenLayer =
@@ -43,9 +48,9 @@ export function TopologicalLayersCard({
 
   const handleSelect = React.useCallback(
     (id: number) => {
-      router.push(`/?topic=${id}`);
+      router.push(buildTopicHref(id, resolvedSource));
     },
-    [router]
+    [resolvedSource, router]
   );
   const handleToggle = React.useCallback((level: number, isOpen: boolean) => {
     setOpenLayers((prev) => {
